@@ -1,9 +1,23 @@
 {
   "name": "ocean-threads",
-  "version": "0.0.0",
+  "author": "pirates-team",
+  "version": "0.0.1",
+  "description": "A modern question-and-answer (Q&A) website for General Assembly.",
+  "keywords": [
+    "question-and-answer",
+    "knowledge management",
+    "social networking",
+    "microblogging"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/pirates-team/ocean-threads.git"
+  },
+  "main": "server.js",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
