@@ -20,9 +20,12 @@
       <a href="/threads" class="navButton">Threads</a>
       <a href="/leaderboards" class="navButton">Leaderboards</a>
 
-      <a href="/profile" class="navButton">Profile</a>
-      <a href="/logout" class="navButton">Logout</a>
-      <a href="/profile"><img src='' class="navUserImg"></a>
-      <a href="/auth/google" class="login navButton">Login</a>
+      <% if (user) { %>
+        <a href="/profile" class="navButton">Profile</a>
+        <a href="/logout" class="navButton">Logout</a>
+        <a href="/profile"><img src='<%= user.avatar %>' class="navUserImg"></a>
+        <% } else { %>
+          <a href="/auth/google" class="login navButton">Login</a>
+          <% } %>
     </div>
   </nav>
