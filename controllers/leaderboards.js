@@ -1,3 +1,5 @@
+
+
 async function leaderPage(req, res) {
   try {
     res.render('pages/leaderboards');
