@@ -2,4 +2,24 @@
 
   <h1>Profile Page</h1>
 
+  <div class="profileBox">
+    <h2>
+      <%= user.name %>
+    </h2>
+
+    <div class="profileImageBox">
+      <img src="<%= user.avatar %>" class="userImage">
+    </div>
+
+    <p>Threads Created: <%= user.threadsCreated.length %>
+    </p>
+    <p>Comments: <%= user.comments.length %>
+    </p>
+    <p>Points: <%= user.points %>
+    </p>
+    <p>Replies: <%= user.replies %>
+    </p>
+
+  </div>
+
   <%- include('../partials/footer') %>
