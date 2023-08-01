@@ -11,4 +11,19 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <nav>
+      <div class="navBar">
+        <a href="/" class="navButton">Home</a>
+        <a href="/threads" class="navButton">Threads</a>
+        <a href="/leaderboards" class="navButton">Leaderboards</a>
+  
+        <% if (user) { %>
+          <a href="/profile" class="navButton">Profile</a>
+          <a href="/logout" class="navButton">Logout</a>
+          <a href="/profile"><img src='<%= user.avatar %>' class="navUserImg"></a>
+          <% } else { %>
+            <a href="/auth/google" class="login navButton">Login</a>
+            <% } %>
+      </div>
+    </nav>
     
