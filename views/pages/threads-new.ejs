@@ -27,7 +27,9 @@
           <option value="Suggestions">Suggestions</option>
           <option value="Project Sharing">Project Sharing</option>
         </select>
-
+        <input type="hidden" value="<%=user.avatar %>" id="avatar" name="avatar">
+        <input type="hidden" value="<%=user.name %>" id="author" name="author">
+        <input type="hidden" value="<%=user._id %>" id="authorId" name="authorId">
         <input type="submit" value="Submit">
       </form>
     </div>
