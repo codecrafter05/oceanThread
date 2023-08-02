@@ -1,8 +1,12 @@
 const Thread = require('../models/Thread');
+const User = require('../models/User');
+
 
 async function threadsPage(req, res,) {
   try {
-    res.render('pages/threads');
+    const threads = await Thread.find();
+    const users = await User.find();
+    res.render('pages/threads', { threads, users });
   }
   catch (err) {
     console.log(err)
@@ -21,7 +25,8 @@ async function threadsShow(req, res,) {
 
 async function threadsNew(req, res,) {
   try {
-    res.render('pages/threads-new');
+    const users = await User.find();
+    res.render('pages/threads-new', { users });
   }
   catch (err) {
     console.log(err)
