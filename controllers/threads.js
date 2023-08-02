@@ -36,7 +36,7 @@ async function threadsNew(req, res,) {
 async function createThread(req, res) {
   try {
     const thread = await Thread.create(req.body);
-    res.redirect(`/threads`)
+    res.redirect(`pages/threads`)
   }
   catch (err) {
     console.log(err)
