@@ -209,6 +209,12 @@ scroll bar-Rashid  */
 
 /* leaderbord page */
 
+.scroll-snap-card {
+  height: 100vh;
+  min-height: 100%;
+}
+
+
 .container-fluid {
   background-color: #023047;
 }
