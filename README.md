@@ -1,10 +1,10 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="public/images/logo-1.png" alt="logo" width="140"  height="auto" />
+  <img src="public/images/logo-1.png" alt="logo" width="420"  height="auto" />
   <br/>
 
-  <h3><b>oceanThreads</b></h3>
+  <h2><b>oceanThreads</b></h2>
   <h4>Website Documentation</h4>
 
 </div>
@@ -14,18 +14,17 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
+  - [🌟 Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🛠 Tech Stack](#tech-stack)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Download](#download)
   - [Install](#install)
 - [👥 Team Members](#members)
-- [🔭 Future Features](#future-features)
+- [📅 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
+- [🫰 Show Support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
@@ -33,15 +32,35 @@
 
 # 📖 About the Project <a name="about-project"></a>
 
-**oceanThreads** is a modern question-and-answer (Q&A) web app that is built different for the students of General Assembly.
+**oceanThreads** is a modern question-and-answer (Q&A) web app that is built different using web technologies for the students and instructors of General Assembly.
 
-It is a kind of [Collective Intelligence (CI)](https://en.wikipedia.org/wiki/Collective_intelligence) concept which can be considered as an alternative to Artificial intelligence (AI) to provide students with an interactive, progressive and human-oriented learning journey. oceanThreads is inspired by other knowledge markets such is stackoverflow.com, quora.com, etc.
+It is a kind of [Collective Intelligence (CI)](https://en.wikipedia.org/wiki/Collective_intelligence) solution which can be considered as an alternative to Artificial intelligence (AI) to provide students with an interactive, progressive and human-oriented learning journey. oceanThreads is inspired by other knowledge markets such as stackoverflow.com, quora.com, etc.
 
-“Now is no time to think of what you do not have. Think of what you can do with that there is.” ― Ernest Hemingway, The Old Man and the Sea
+> “Now is no time to think of what you do not have. Think of what you can do with that there is.” ― Ernest Hemingway, The Old Man and the Sea
 
-## 🛠 Built With <a name="built-with"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Tech Stack <a name="tech-stack"></a>
+<!-- Key Features -->
+
+## 🌟 Key Features <a name="key-features"></a>
+
+- **[key_feature_1]**
+- **[key_feature_2]**
+- **[key_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Live Demo -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- The web app is accessible from [this link](https://pages.git.generalassemb.ly/pirates-team/ocean-threads/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Built With -->
+
+## 🛠 Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
@@ -54,7 +73,7 @@ It is a kind of [Collective Intelligence (CI)](https://en.wikipedia.org/wiki/Col
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="htthttps://nodejs.org/">Node.js</a></li>
+    <li><a href="https://nodejs.org/">Node.js</a></li>
     <li><a href="https://expressjs.com/">Express.js</a></li>
     <li><a href="https://www.passportjs.org/">Passport.js</a></li>
   </ul>
@@ -67,24 +86,6 @@ It is a kind of [Collective Intelligence (CI)](https://en.wikipedia.org/wiki/Col
     <li><a href="https://mongoosejs.com/">Mongoose ORM</a></li>
   </ul>
 </details>
-
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- The web app is accessible from [this link](https://pages.git.generalassemb.ly/pirates-team/ocean-threads/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -125,33 +126,21 @@ Touch an '.env' file and include the following keys: DATABASE_URL, GOOGLE_CLIENT
 
 ## 👥 Team Members <a name="members"></a>
 
-👤 **Ahmed Almadhoob**
+👤 **Ahmed Almadhoob** | [GitHub](https://git.generalassemb.ly/almadhoob/) - [LinkedIn](https://www.linkedin.com/in/almadhoob/)
 
-- GitHub: [@almadhoob](https://git.generalassemb.ly/almadhoob/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/almadhoob/)
+👤 **Ali Haji** (Captain) | [GitHub](https://git.generalassemb.ly/ali-haji4/) - [LinkedIn](https://linkedin.com/in/ali--haji/)
 
-👤 **Ali Haji** (Captain)
+👤 **Hamad Alhibshi** | [GitHub](https://git.generalassemb.ly/hamadalhibshi/) - [LinkedIn](https://linkedin.com/in/halhibshi/)
 
-- GitHub: [@ali-haji4](https://git.generalassemb.ly/ali-haji4/)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/ali--haji/)
-
-👤 **Hamad Alhibshi**
-
-- GitHub: [@hamadalhibshi](https://git.generalassemb.ly/hamadalhibshi/)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/halhibshi/)
-
-👤 **Rashid Althawadi**
-
-- GitHub: [@althawadi](https://git.generalassemb.ly/althawadi/)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/althawadi7/)
+👤 **Rashid Althawadi** | [GitHub](https://git.generalassemb.ly/althawadi/) - [LinkedIn](https://linkedin.com/in/althawadi7/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+## 📅 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
+- [x] **[new_feature_1]**
 - [ ] **[new_feature_2]**
 - [ ] **[new_feature_3]**
 
@@ -187,9 +176,9 @@ git push -u origin yourBranch
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
+## 🫰 Show Support <a name="support"></a>
 
-If you like this project then buy a cup of coffee for each team member.
+If you like this project then support us by donations or buy a cup of coffee for each team member.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,7 +186,7 @@ If you like this project then buy a cup of coffee for each team member.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank Tor Johnson, Avan Sardar, Ahlam Almutawa, Mohamed Faris, Brendan Eich and Ernest Hemingway.
+We would like to thank Tor Johnson, Avan Sardar, Ahlam Almutawa, Mohamed Faris and Ernest Hemingway.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,6 +194,6 @@ We would like to thank Tor Johnson, Avan Sardar, Ahlam Almutawa, Mohamed Faris, 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT-licensed](./LICENSE).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
