@@ -1,61 +1,67 @@
 <%- include('../partials/header') %>
 
-<div id="threads">
-  <div class="container pt-5 pb-5">
-    <h1>Threads</h1>
-    <div>
-      <hr class="mt-4 mb-4"/>
-      <a href="/threads/threads-new">Add a new thread</a>
-      <div class="thread-container d-flex flex-column mb-4">
-        
+  <div id="threads">
+    <div class="container pt-5 pb-5">
+      <h1>Threads</h1>
+      <div>
+        <hr class="mt-4 mb-4" />
+        <a href="/threads/threads-new">Add a new thread</a>
+        <div class="thread-container d-flex flex-column mb-4">
 
-            <a href="/threads"><h4>Title of the Thread</h4></a>
-  
+
+          <a href="/threads/thread-view">
+            <h4>Title of the Thread</h4>
+          </a>
+
           <div class="thread-info d-flex flex-row justify-content-between">
-            <div class="d-flex flex-row" >
+            <div class="d-flex flex-row">
               <h5>Picture</h5>
               <div class="d-flex flex-column">
                 <h6>Username</h6>
                 <h6>Date</h6>
               </div>
             </div>
-       
-     
+
+
             <div class="thread-container-type d-flex flex-row">
               <span class="thread-cohort">Cohort</span>
               <span class="thread-type">Type</span>
               <span class="thread-status">Status</span>
-             </div>
+            </div>
           </div>
           <h5>This is the content of the thread</h5>
-      </div>
-      <div class="thread-container d-flex flex-row mb-4">
-        <div class="thread-container-type d-flex flex-column mr-3">
-         <span>Cohort</span>
-         <span>Type</span>
-         <span>Status</span>
         </div>
-        <div class="thread-container-content">
-          <a href="/threads/thread-view"><h4>Title of the Thread</h4></a>
-          <h5>This is the content of the thread</h5>
-          <h6>Username | Date</h6>
+        <div class="thread-container d-flex flex-row mb-4">
+          <div class="thread-container-type d-flex flex-column mr-3">
+            <span>Cohort</span>
+            <span>Type</span>
+            <span>Status</span>
+          </div>
+          <div class="thread-container-content">
+            <a href="/threads/thread-view">
+              <h4>Title of the Thread</h4>
+            </a>
+            <h5>This is the content of the thread</h5>
+            <h6>Username | Date</h6>
+          </div>
         </div>
-    </div>
-    <div class="thread-container d-flex flex-row mb-4">
-      <div class="thread-container-type d-flex flex-column mr-3">
-       <span>Cohort</span>
-       <span>Type</span>
-       <span>Status</span>
+        <div class="thread-container d-flex flex-row mb-4">
+          <div class="thread-container-type d-flex flex-column mr-3">
+            <span>Cohort</span>
+            <span>Type</span>
+            <span>Status</span>
+          </div>
+          <div class="thread-container-content">
+            <a href="/threads/thread-view">
+              <h4>Title of the Thread</h4>
+            </a>
+            <h5>This is the content of the thread</h5>
+            <h6>Username | Date</h6>
+          </div>
+        </div>
       </div>
-      <div class="thread-container-content">
-        <a href="/threads/thread-view"><h4>Title of the Thread</h4></a>
-        <h5>This is the content of the thread</h5>
-        <h6>Username | Date</h6>
-      </div>
-  </div>
-  </div>
 
-</div>
-</div>
+    </div>
+  </div>
 
   <%- include('../partials/footer') %>
