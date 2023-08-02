@@ -29,16 +29,6 @@ const userSchema = new Schema({
     ref: 'Comment',
   }],
 
-  points: {
-    type: Number,
-    default: 0,
-  },
-
-  endorsements: {
-    type: Number,
-    default: 0
-  },
-
   threadsSolved: {
     type: Number,
     default: 0

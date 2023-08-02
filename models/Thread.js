@@ -24,17 +24,25 @@ const threadSchema = new Schema({
     required: true
   },
 
-  threadStatus: {
-    type: String,
-    enum: ['Completed', 'Incomplete', 'General'],
-  },
-
   comment: {
     type: Schema.Types.ObjectId,
     ref: 'Comment',
   },
 
   briefDescription: {
+    type: String,
+    required: true
+  },
+
+  avatar: {
+    type: String,
+  },
+
+  author: {
+    type: String
+  },
+
+  authorId: {
     type: String,
     required: true
   },
