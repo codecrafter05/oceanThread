@@ -45,6 +45,7 @@ async function createThread(req, res) {
 }
 
 
+
 module.exports = {
   threadsPage,
   threadsShow,
