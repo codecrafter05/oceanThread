@@ -19,7 +19,7 @@ const threadSchema = new Schema({
 
   cohort: {
     type: String,
-    enum: ['SEI', 'DAI', 'UI/UX'],
+    enum: ['SEI', 'DAI', 'UI/UX', 'General'],
     required: true
   },
 
