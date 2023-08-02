@@ -1,9 +1,8 @@
 <%- include('../partials/header') %>
-<div id="thread-view" v-cloak>
+  <div id="thread-view" v-cloak>
     <div class="container pt-5 pb-5">
       <h1>Add a new Thread</h1>
-      <hr>
-        
+      <hr>        
     <form action="/threads/threads-new" method="post">
         <label for="title">Thread Title:</label>
         <input type="text" id="title" name="title"><br><br>
@@ -13,10 +12,10 @@
         <textarea name="content" id="content" cols="30" rows="10"></textarea><br>
         <label for="cohort">Thread Cohort:</label>
         <select name="cohort" id="cohorts">
-            <option value="General">General</option>
-            <option value="SEI">Software Engineering Immersive</option>
-            <option value="DAI">Data Analytics</option>
-            <option value="UI/UX">User Interface / User Experience</option>
+          <option value="General">General</option>
+          <option value="SEI">Software Engineering Immersive</option>
+          <option value="DAI">Data Analytics</option>
+          <option value="UI/UX">User Interface / User Experience</option>
         </select>
 
         <label for="type">Thread Type:</label>
@@ -29,7 +28,7 @@
         </select>
 
         <input type="submit" value="Submit">
-    </form>
+      </form>
     </div>
   </div>
   <%- include('../partials/footer') %>
