@@ -7,14 +7,25 @@
       <hr>
       <div class="thread-container d-flex flex-row mb-4">
         <div class="thread-container-type d-flex flex-column mr-3">
-          <span>Cohort</span>
-          <span>Type</span>
-          <span>Status</span>
+          <img src='<%= thread.avatar %>' />
+          <span>
+            <%= thread.cohort %>
+          </span>
+          <span>
+            <%= thread.threadType %>
         </div>
         <div class="thread-container-content">
           <h5>
           </h5>
-          <h6>Username | Date</h6>
+          <h6>
+            <%= thread.author %>
+          </h6>
+          <h6>
+            <%= thread.createdAt %>
+          </h6>
+          <h6>
+            <%= thread.content %>
+          </h6>
         </div>
       </div>
       <p>(See also <em>assets/styles/pages/thread-view.less</em>, <em>assets/js/pages/thread-view.page.js</em>, and
