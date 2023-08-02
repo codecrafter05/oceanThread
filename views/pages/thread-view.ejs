@@ -1,23 +1,49 @@
 <%- include('../partials/header') %>
-  <div id="thread-view" v-cloak>
+  <div id="threads">
     <div class="container pt-5 pb-5">
-      <h1>Title</h1>
-      <hr>
-      <div class="thread-container d-flex flex-row mb-4">
-        <div class="thread-container-type d-flex flex-column mr-3">
-          <span>Cohort</span>
-          <span>Type</span>
-          <span>Status</span>
-        </div>
-        <div class="thread-container-content">
+      <h1>
+        <%= thread.title %>
+      </h1>
+      <div>
+        <hr class="mt-4 mb-4" />
+        <div class="thread-container d-flex flex-column mb-4">
+
+
+          <h4>
+            <%= thread.briefDescription %>
+          </h4>
+
+          <div class="thread-info d-flex flex-row justify-content-between">
+            <div class="d-flex flex-row">
+              <img src='<%= thread.avatar %>' />
+              <div class="d-flex flex-column">
+                <h6>
+                  <%= thread.author %>
+                </h6>
+                <h6>
+                  <%= thread.createdAt %>
+                </h6>
+              </div>
+            </div>
+
+
+            <div class="thread-container-type d-flex flex-row">
+              <span class="thread-cohort">
+                <%= thread.cohort %>
+              </span>
+              <span class="thread-type">
+                <%= thread.threadType %>
+              </span>
+            </div>
+          </div>
           <h5>
+            <%= thread.content %>
           </h5>
-          <h6>Username | Date</h6>
+
         </div>
+
       </div>
-      <p>(See also <em>assets/styles/pages/thread-view.less</em>, <em>assets/js/pages/thread-view.page.js</em>, and
-        <em>api/controllers/view-thread-view.js</em>.)
-      </p>
+
     </div>
   </div>
   <%- include('../partials/footer') %>
