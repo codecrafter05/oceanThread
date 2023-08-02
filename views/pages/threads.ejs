@@ -12,7 +12,7 @@
 
               <% threads.forEach(thread=> { %>
 
-                <a href="/threads/thread-view">
+                <a href="/threads/thread-view?id=<%= thread._id %>">
                   <h4>
                     <%= thread.title %>
                   </h4>
@@ -42,7 +42,7 @@
                   </div>
                 </div>
                 <h5>
-                  <%= thread.content %>
+                  <%= thread.briefDescription %>
                 </h5>
 
                 <% }); %>
