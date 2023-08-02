@@ -26,7 +26,10 @@ router.get('/oauth2callback', passport.authenticate(
     successRedirect: '/',
     failureRedirect: '/'
   }
-));
+)), async (req, res) => {
+  res.redirect('/leaderboards')
+};
+
 
 // OAuth logout route
 router.get('/logout', function (req, res) {
@@ -35,4 +38,7 @@ router.get('/logout', function (req, res) {
   });
 });
 
+
+
 module.exports = router;
+
