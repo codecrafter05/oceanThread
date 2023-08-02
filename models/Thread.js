@@ -43,8 +43,8 @@ const threadSchema = new Schema({
   },
 
   authorId: {
-    type: String,
-    required: true
+    type: Schema.Types.ObjectId,
+    ref: 'User'
   },
 
   user: {
