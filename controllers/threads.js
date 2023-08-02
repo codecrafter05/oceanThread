@@ -21,8 +21,18 @@ async function threadsShow(req, res,) {
   }
 };
 
+async function threadsNew(req, res,) {
+  try {
+    res.render('pages/threads-new');
+  }
+  catch (err) {
+    console.log(err)
+  }
+};
+
 
 
 module.exports = {
   threadsPage,
+  threadsNew
 }
