@@ -9,7 +9,6 @@ a {
   color: #00B7FF;
 }
 
-
 .container-fluid {
   background-color: #023047;
   margin: 0;
@@ -97,4 +96,137 @@ p {
 
 .success__close path {
   fill: #2B641E;
+}
+
+/*----- NAVIGATION BAR - ALI HAJI -----*/
+
+/*   DESKTOP DEMO OF SVG EFFECTS. */
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+
+.header {
+  width: 100%;
+  height: 75px;
+  background: #17141d;
+  opacity: 0.95;
+  overflow: hidden;
+  -webkit-box-shadow: #333 1px 3px 4px;
+  -moz-box-shadow: #333 1px 3px 4px;
+  box-shadow: #333 1px 3px 4px;
+}
+
+.content {
+  width: 100%;
+  height: calc(100% - 75px);
+  background-image: url(https://picsum.photos/1000/700);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #9387ab;
+}
+h1 {
+  letter-spacing: 4px;
+  padding: 1em;
+  color: white;
+  background-color: #17141d;
+  opacity: 0.8;
+}
+
+svg.line-top {
+  width: 100%;
+  background-color: #17141d;
+}
+svg.line-bottom {
+  width: 100%;
+}
+.menu {
+  width: 750px;
+  margin: 0 auto;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  width: 25%;
+  height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 3.5px;
+  transition: all 0.5s ease-out;
+}
+
+li.active {
+  color: orange;
+  transform: scale(1.1);
+}
+
+polygon {
+  stroke-width: 2px;
+  stroke: orange;
+  fill: orange;
+}
+
+@media (max-device-width: 991px) {
+  .header {
+    height: 64px;
+  }
+
+  body {
+    font-size: 0.4em;
+  }
+  .content {
+    height: calc(100% - 64px);
+  }
+}
+
+/*----- THREADS PAGE - ALI HAJI -----*/
+#threads {
+
+}
+
+.thread-container {
+  background-color: lightcyan;
+  border-radius: 10px;
+  padding: 10px 30px;
+  
+}
+
+.thread-cohort {
+  background-color: #00B7FF;
+  border-radius: 10px;
+  padding: 3px 15px;
+  border: 1px solid lightblue;
+  color: blue;
+  height: 35px;
+  margin-right: 15px;
+}
+
+.thread-type {
+  background-color: lightpink;
+  border-radius: 10px;
+  padding: 3px 15px;
+  border: 1px solid blueviolet;
+  color: purple;
+  height: 35px;
+  margin-right: 15px;
+}
+
+.thread-status {
+  background-color: orange;
+  border-radius: 10px;
+  padding: 3px 15px;
+  border: 1px solid lightyellow;
+  color: red;
+  height: 35px;
 }
