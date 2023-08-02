@@ -25,7 +25,7 @@ const threadSchema = new Schema({
 
   threadType: {
     type: String,
-    enum: ['Issues', 'Suggestions', 'Project Sharing', 'feedback', 'general'],
+    enum: ['Issues', 'Suggestions', 'Project Sharing', 'Feedback', 'General'],
     required: true
   },
 

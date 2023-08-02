@@ -4,20 +4,28 @@
       <h1>Add a new Thread</h1>
       <hr>
         
-    <form action="/threads/:id" method="post">
-        <label for="fname">Thread Title:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Brief Description:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="lname">Content:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="cohort">Cohort:</label>
-
+    <form action="/threads/threads-new" method="post">
+        <label for="title">Thread Title:</label>
+        <input type="text" id="title" name="title"><br><br>
+        <label for="description">Brief Description:</label>
+        <input type="text" id="description" name="description"><br><br>
+        <label for="content">Content:</label><br>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea><br>
+        <label for="cohort">Thread Cohort:</label>
         <select name="cohort" id="cohorts">
             <option value="General">General</option>
             <option value="SEI">Software Engineering Immersive</option>
             <option value="DAI">Data Analytics</option>
             <option value="UI/UX">User Interface / User Experience</option>
+        </select>
+
+        <label for="type">Thread Type:</label>
+        <select name="type" id="type">
+            <option value="General">General</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Issues">Issues</option>
+            <option value="Suggestions">Suggestions</option>
+            <option value="Project Sharing">Project Sharing</option>
         </select>
 
         <input type="submit" value="Submit">
