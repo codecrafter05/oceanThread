@@ -40,6 +40,11 @@ const threadSchema = new Schema({
     ref: 'Comment',
   },
 
+  briefDescription: {
+    type: String,
+    required: true
+  }
+
 }, {
   timestamps: true,
 });
