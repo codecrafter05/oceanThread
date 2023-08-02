@@ -10,16 +10,47 @@
     <div class="profileImageBox">
       <img src="<%= user.avatar %>" class="userImage">
     </div>
+    <div>
+      <p>Threads Created: <%= user.threadsCreated.length %>
+      </p>
+      <p>Comments: <%= user.comments.length %>
+      </p>
+      <p>Replies: <%= user.replies %>
+      </p>
+    </div>
 
-    <p>Threads Created: <%= user.threadsCreated.length %>
-    </p>
-    <p>Comments: <%= user.comments.length %>
-    </p>
-    <p>Points: <%= user.points %>
-    </p>
-    <p>Replies: <%= user.replies %>
-    </p>
+    <div class="container pt-5 pb-5">
+      <% threads.forEach(thread=> { %>
+        <div class="thread-info d-flex flex-row justify-content-between">
+          <h5>
+            <%= thread.title %>
+          </h5>
+          <div class="d-flex flex-row">
+            <img src='<%= thread.avatar %>' />
+            <div class="d-flex flex-column">
+              <h6>
+                <%= thread.author %>
+              </h6>
+              <h6>
+                <%= thread.createdAt %>
+              </h6>
+            </div>
+            <h5>
+              <%= thread.briefDescription %>
+            </h5>
+            <span class="thread-type">
+              <%= thread.cohort %>
+            </span>
+            <span class="thread-type">
+              <%= thread.threadType %>
+            </span>
 
-  </div>
+          </div>
 
-  <%- include('../partials/footer') %>
+
+          <% }); %>
+        </div>
+
+    </div>
+
+    <%- include('../partials/footer') %>
