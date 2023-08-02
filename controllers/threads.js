@@ -15,7 +15,7 @@ async function threadsPage(req, res,) {
 
 async function threadsShow(req, res,) {
   try {
-    const thread = await Thread.findById(req.params.id)
+    const thread = await Thread.findById(req.query.id)
     res.render(`pages/thread-view`, { thread });
   }
   catch (err) {

@@ -1,6 +1,8 @@
 <%- include('../partials/header') %>
 
   <h1>Profile Page</h1>
+  <hr class="mt-4 mb-4" />
+
 
   <div class="profileBox">
     <h2>
@@ -19,38 +21,54 @@
       </p>
     </div>
 
-    <div class="container pt-5 pb-5">
-      <% threads.forEach(thread=> { %>
-        <div class="thread-info d-flex flex-row justify-content-between">
-          <h5>
-            <%= thread.title %>
-          </h5>
-          <div class="d-flex flex-row">
-            <img src='<%= thread.avatar %>' />
-            <div class="d-flex flex-column">
-              <h6>
-                <%= thread.author %>
-              </h6>
-              <h6>
-                <%= thread.createdAt %>
-              </h6>
-            </div>
-            <h5>
-              <%= thread.briefDescription %>
-            </h5>
-            <span class="thread-type">
-              <%= thread.cohort %>
-            </span>
-            <span class="thread-type">
-              <%= thread.threadType %>
-            </span>
+    <div id="threads">
+      <div class="container pt-5 pb-5">
+        <h1>Threads</h1>
+        <div>
+          <hr class="mt-4 mb-4" />
+          <div class="thread-container d-flex flex-column mb-4">
 
+            <% threads.forEach(thread=> { %>
+
+              <a href="/threads/thread-view?id=<%= thread._id %>">
+                <h4>
+                  <%= thread.title %>
+                </h4>
+              </a>
+
+              <div class="thread-info d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row">
+                  <img src='<%= thread.avatar %>' />
+                  <div class="d-flex flex-column">
+                    <h6>
+                      <%= thread.author %>
+                    </h6>
+                    <h6>
+                      <%= thread.createdAt %>
+                    </h6>
+                  </div>
+                </div>
+
+
+                <div class="thread-container-type d-flex flex-row">
+                  <span class="thread-cohort">
+                    <%= thread.cohort %>
+                  </span>
+                  <span class="thread-type">
+                    <%= thread.threadType %>
+                  </span>
+                </div>
+              </div>
+              <h5>
+                <%= thread.briefDescription %>
+              </h5>
+
+              <% }); %>
           </div>
 
-
-          <% }); %>
         </div>
 
+      </div>
     </div>
 
     <%- include('../partials/footer') %>
