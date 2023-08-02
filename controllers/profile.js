@@ -14,7 +14,7 @@ async function profilePage(req, res) {
 
 async function threadsUpdateShow(req, res,) {
   try {
-    const thread = await Thread.findByIdAndUpdate(req.query.id)
+    const thread = await Thread.findById(req.query.id)
     res.render(`pages/threads-update`, { thread });
   }
   catch (err) {
@@ -24,8 +24,12 @@ async function threadsUpdateShow(req, res,) {
 
 async function threadsUpdate(req, res,) {
   try {
-    const thread = await Thread.findByIdAndUpdate(req.query.id)
-    res.redirect(`pages/profile`, { thread });
+    console.log(req.body)
+    await Thread.findByIdAndUpdate(
+      req.query.threadId,
+      req.body
+    )
+    res.redirect('/threads')
   }
   catch (err) {
     console.log(err)
