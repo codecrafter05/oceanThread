@@ -1,7 +1,5 @@
 const Thread = require('../models/Thread');
 
-
-
 async function threadsPage(req, res,) {
   try {
     res.render('pages/threads');
@@ -30,9 +28,22 @@ async function threadsNew(req, res,) {
   }
 };
 
+async function createThread(req, res) {
+  try {
+    const thread = await Thread.create(req.body);
+    res.redirect(`pages/threads/${thread._id}`)
+  }
+  catch (err) {
+    console.log(err)
+    res.render('pages/threads-new');
+  }
+}
+
 
 
 module.exports = {
   threadsPage,
-  threadsNew
+  threadsShow,
+  threadsNew,
+  createThread,
 }

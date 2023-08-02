@@ -12,11 +12,6 @@ const threadSchema = new Schema({
     required: true,
   },
 
-  author: {
-    type: String,
-    required: true,
-  },
-
   cohort: {
     type: String,
     enum: ['SEI', 'DAI', 'UI/UX', 'General'],
@@ -32,7 +27,6 @@ const threadSchema = new Schema({
   threadStatus: {
     type: String,
     enum: ['Completed', 'Incomplete', 'General'],
-    required: true,
   },
 
   comment: {
@@ -43,6 +37,11 @@ const threadSchema = new Schema({
   briefDescription: {
     type: String,
     required: true
+  },
+
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
   }
 
 }, {
