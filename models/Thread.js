@@ -20,8 +20,8 @@ const threadSchema = new Schema({
 
   threadType: {
     type: String,
-    enum: ['Issues', 'Suggestions', 'Project Sharing', 'feedback', 'general'],
-    // required: true
+    enum: ['Issues', 'Suggestions', 'Project Sharing', 'Feedback', 'General'],
+    required: true
   },
 
   threadStatus: {
