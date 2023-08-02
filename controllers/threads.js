@@ -11,8 +11,8 @@ async function threadsPage(req, res,) {
 
 async function threadsShow(req, res,) {
   try {
-    let threadID = req.params.id;
-    res.render('pages/threads/:id');
+    const thread = await Thread.findById(req.params.id)
+    res.render(`pages/thread-view`, { thread });
   }
   catch (err) {
     console.log(err)
@@ -31,7 +31,7 @@ async function threadsNew(req, res,) {
 async function createThread(req, res) {
   try {
     const thread = await Thread.create(req.body);
-    res.redirect(`pages/threads/${thread._id}`)
+    res.redirect(`/threads`)
   }
   catch (err) {
     console.log(err)
