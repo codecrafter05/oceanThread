@@ -43,11 +43,12 @@ async function createThread(req, res) {
     user.threadsCreated += 1;
     await user.save();
     res.redirect('/threads');
-  } catch (err) {
+  }
+  catch (err) {
     console.log(err);
     res.render('pages/threads-new');
   }
-}
+};
 
 async function createComment(req, res) {
   try {

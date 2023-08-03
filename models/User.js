@@ -7,7 +7,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    
+
     googleId: {
       type: String,
       required: true,
@@ -21,31 +21,12 @@ const userSchema = new Schema(
       type: String,
     },
 
-    threadsCreated: [ // Array of Objects
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'Post',
-      },
-    ],
-
-    commentsCreated: [ // Array of Objects
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'Comment',
-      },
-    ],
-
-    threadsSolved: {
+    threadsCreated: {
       type: Number,
       default: 0,
     },
 
-    replies: {
-      type: Schema.Types.ObjectId,
-      ref: 'Reply',
-    },
-  },
-  {
+  }, {
     timestamps: true,
   }
 );
