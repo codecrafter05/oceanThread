@@ -1,11 +1,11 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="public/images/logo-1.png" alt="logo" width="420"  height="auto" />
+  <img src="public/images/logo-2.png" alt="Logo" width=80%  height="auto" />
   <br />
 
-  <h1><b>oceanThreads</b></h1>
-  <h2>Documentation</h2>
+  <h1><b>oceanThreads Project</b></h1>
+  <h4>Ignite exciting threads with like-minded people</h4>
 
 </div>
 
@@ -37,6 +37,8 @@
 It is inspired by other knowledge markets such as stackoverflow.com, quora.com, etc. oceanThreads is a kind of [Collective Intelligence (CI)](https://en.wikipedia.org/wiki/Collective_intelligence) solution which can be considered as an alternative to Artificial intelligence (AI) to provide students with an interactive, progressive and human-oriented learning journey.
 
 > “Now is no time to think of what you do not have. Think of what you can do with that there is.” ― Ernest Hemingway, The Old Man and the Sea
+
+<img src="public/images/addThread.png" alt="Screenshot" width=80% height="auto" />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,7 +133,7 @@ Touch an '.env' file and include the following keys: DATABASE_URL, GOOGLE_CLIENT
 
 👤 **Ahmed Almadhoob** | [GitHub](https://git.generalassemb.ly/almadhoob/) - [LinkedIn](https://www.linkedin.com/in/almadhoob/)
 
-👤 **Ali Haji** (El capitán) | [GitHub](https://git.generalassemb.ly/ali-haji4/) - [LinkedIn](https://linkedin.com/in/ali--haji/)
+👤 **Ali Haji** (El Capitán) | [GitHub](https://git.generalassemb.ly/ali-haji4/) - [LinkedIn](https://linkedin.com/in/ali--haji/)
 
 👤 **Hamad Alhibshi** | [GitHub](https://git.generalassemb.ly/hamadalhibshi/) - [LinkedIn](https://linkedin.com/in/halhibshi/)
 
@@ -160,12 +162,6 @@ To create a new branch each time:
 git checkout main
 git pull origin main
 git checkout -b yourNewBranch
-```
-
-To update an existing branch:
-```sh
-git checkout yourElderBranch
-git pull origin main
 ```
 
 To push your branch:
