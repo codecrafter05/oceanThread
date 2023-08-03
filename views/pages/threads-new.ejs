@@ -1,18 +1,13 @@
 <%- include('../partials/header') %>
   <div id="threads-new" v-cloak>
-    <div class="container row">
-
+    <div class="container d-flex">
+  
       <div class="thread-new-image col-5 ">
-        <h1>Image</h1>
-      </div>
-      <div class="thread-new-form col-7">
-        <h1>Add a New Thread</h1>
-      </div>
-      <div class="thread-new-form col-7">
-        <h3 class="thread-new-header">Create a New Thread</h3>
-        <form action="/threads/<%= user._id %>" method="post">
-
-
+        <img src="/images/addThread.png" alt="add-thread-img" class="add-img">
+        </div>
+        <div class="thread-new-form col-7">
+            <h3 class="thread-new-header">Create a New Thread</h3>
+      <form action="/threads/<%= user._id %>" method="post">
           <div class="form-group row">
             <label for="title">Title</label>
             <input type="text" class="form-control" name="title" id="title" placeholder="Enter Thread Title">
