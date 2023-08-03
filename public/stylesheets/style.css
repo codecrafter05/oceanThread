@@ -494,17 +494,40 @@ nav {
   padding: 1.875rem;
 }
 
-.card-body {
-  flex: 1 1 auto;
-  padding: 1rem 1rem;
-}
-
-* {
-  outline: none;
-  padding: 0;
+body {
+    background-color: #023047; /* Dark background color */
+    color: #fff;
 }
 
 .scroll-snap-card {
-  background: #011824;
-  color: #ffffff;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.dataTablesCard {
+    width: 100%;
+}
+
+.dataTablesCard thead {
+    background-color: #222;
+    color: #8ECAE6;
+}
+
+.dataTablesCard tbody tr {
+    background-color: #444;
+    color: #8ECAE6;
+}
+
+.dataTablesCard tbody tr:nth-child(even) {
+    background-color: #555;
+}
+
+.dataTablesCard tbody tr:not(:last-child) {
+    border-bottom: 1px solid #8ECAE6;
 }
