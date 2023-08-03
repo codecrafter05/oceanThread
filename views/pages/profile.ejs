@@ -1,72 +1,59 @@
 <%- include('../partials/header') %>
 
-  <h1>Profile Page</h1>
-  <hr class="mt-4 mb-4" />
 
-  <div class="profileBox">
-    <h2>
-      <%= user.name %>
-    </h2>
-
-    <div class="profileImageBox">
-      <img src="<%= user.avatar %>" class="userImage">
-    </div>
-    <div>
-      <p>Threads Created: <%= user.threadsCreated %>
-      </p>
-      <p>Replies: <%= user.replies %>
-      </p>
-    </div>
+ 
 
     <div id="threads">
       <div class="container pt-5 pb-5">
-        <h1>Threads</h1>
+        <h1>My Threads</h1>
         <div>
           <hr class="mt-4 mb-4" />
-          <div class="thread-container d-flex flex-column mb-4">
+          <% threads.forEach(thread=> { %>
+            <div class="thread-container d-flex flex-column mb-4">
+            <a class="thread-title" href="/threads/thread-view?id=<%= thread._id %>">
+                <%= thread.title %>
+            </a>
 
-            <% threads.forEach(thread=> { %>
-
-              <a href="/threads/thread-view?id=<%= thread._id %>">
-                <h4>
-                  <%= thread.title %>
-                </h4>
-              </a>
-
-              <div class="thread-info d-flex flex-row justify-content-between">
-                <div class="d-flex flex-row">
-                  <img src='<%= thread.avatar %>' />
-                  <div class="d-flex flex-column">
-                    <h6>
-                      <%= thread.author %>
-                    </h6>
-                    <h6>
-                      <%= thread.createdAt %>
-                    </h6>
-                  </div>
-                </div>
-
-                <div class="thread-container-type d-flex flex-row">
-                  <span class="thread-cohort">
-                    <%= thread.cohort %>
+            <div class="thread-info d-flex flex-row justify-content-between row">
+              <div class="d-flex flex-row col-8">
+                <img class="thread-avatar" src='<%= thread.avatar %>' />
+                <div class="d-flex flex-column">
+                  <span class="thread-author">
+                    <%= thread.author %>
                   </span>
-                  <span class="thread-type">
-                    <%= thread.threadType %>
+                  <span class="thread-createdAt">
+                    <%= thread.createdAt %>
                   </span>
-                  <a href="/profile/threads-update?id=<%= thread._id %>">Edit</a>
-
-                  <form action="/profile/<%= thread._id %>/deleteThread?_method=DELETE" method="POST">
-                    <input type="hidden" name="id" value="<%= thread._id %>">
-                    <input type="submit" value='delete' />
-                  </form>
                 </div>
               </div>
-              <h5>
-                <%= thread.briefDescription %>
-              </h5>
 
-              <% }); %>
+
+              <div class="thread-container-type d-flex flex-row col-4 flex-wrap justify-content-end">
+                <span class="thread-cohort button-34">
+                  <%= thread.cohort %>
+                </span>
+                <span class="thread-type button-35">
+                  <%= thread.threadType %>
+                </span>
+              </div>
+            </div>
+            <span class="thread-description">
+              <%= thread.briefDescription %>
+            </span>
+
+            <div class="thread-container-type d-flex flex-row col-12 flex-wrap justify-content-end">
+              <a href="/profile/threads-update?id=<%= thread._id %>" class="button-5">Edit</a>
+              <form action="/profile/<%= thread._id %>/deleteThread?_method=DELETE" method="POST" >
+                <input type="hidden" name="id" value="<%= thread._id %>" class="button-5">
+                <input type="submit" value='Delete' class="button-5" />
+              </form>
+            </div>
+          
+
+         
+
           </div>
+            <% }); %>
         </div>
       </div>
     </div>
