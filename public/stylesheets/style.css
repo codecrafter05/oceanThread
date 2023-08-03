@@ -397,7 +397,7 @@ nav {
   font-weight: 700;
 }
 
-/* leaderbord page */
+/* leaderbord page Rashid */
 
 .scroll-snap-card {
   height: 85vh;
@@ -465,4 +465,23 @@ nav {
 .card:hover {
   background-color: rgb(43, 43, 43);
   transition-duration: .5s;
+}
+
+.card-body {
+  padding: 1.875rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+* {
+  outline: none;
+  padding: 0;
+}
+
+.scroll-snap-card {
+  background: #011824;
+  color: #ffffff;
 }
