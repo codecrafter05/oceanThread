@@ -12,6 +12,34 @@ async function profilePage(req, res) {
   }
 }
 
+async function threadsUpdateShow(req, res,) {
+  try {
+    const thread = await Thread.findById(req.query.id)
+    res.render(`pages/threads-update`, { thread });
+  }
+  catch (err) {
+    console.log(err)
+  }
+};
+
+async function threadsUpdate(req, res,) {
+  try {
+    console.log(req.body)
+    await Thread.findByIdAndUpdate(
+      req.query.threadId,
+      req.body
+    )
+    res.redirect('/threads')
+  }
+  catch (err) {
+    console.log(err)
+  }
+};
+
+
+
 module.exports = {
   profilePage,
+  threadsUpdate,
+  threadsUpdateShow,
 }
