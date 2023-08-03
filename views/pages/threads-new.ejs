@@ -7,12 +7,10 @@
       </div>
       <div class="thread-new-form col-7">
         <h1>Add a New Thread</h1>
-        <form action="/threads" method="post">
-
       </div>
       <div class="thread-new-form col-7">
         <h3 class="thread-new-header">Create a New Thread</h3>
-        <form action="/threads" method="post">
+        <form action="/threads/<%= user._id %>" method="post">
 
 
           <div class="form-group row">
