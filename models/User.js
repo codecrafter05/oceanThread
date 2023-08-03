@@ -21,13 +21,18 @@ const userSchema = new Schema({
 
   threadsCreated: {
     type: Number,
-    default: 0,
+    default: 0
   },
 
   comments: [{
     type: Schema.Types.ObjectId,
     ref: 'Comment',
   }],
+
+  replies: {
+    type: Schema.Types.ObjectId,
+    ref: 'Reply'
+  }
 
 }, {
   timestamps: true
