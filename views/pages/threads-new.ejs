@@ -1,12 +1,12 @@
 <%- include('../partials/header') %>
-  <div id="thread-view" v-cloak>
+  <div id="threads-new" v-cloak>
     <div class="container row">
   
       <div class="thread-new-image col-5 ">
         <h1>Image</h1>
         </div>
         <div class="thread-new-form col-7">
-            <h1>Add a New Thread</h1>
+            <h3 class="thread-new-header">Create a New Thread</h3>
       <form action="/threads" method="post">
 
         <div class="form-group row">
@@ -44,7 +44,9 @@
         <input type="hidden" value="<%=user.avatar %>" id="avatar" name="avatar">
         <input type="hidden" value="<%=user.name %>" id="author" name="author">
         <input type="hidden" value="<%=user._id %>" id="authorId" name="authorId">
-        <input type="submit" value="Submit">
+
+        <input type="submit" value="Create Thread" class="button-5 thread-submit">
+  
       </form>
       </div>
     </div>
