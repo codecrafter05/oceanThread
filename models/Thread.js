@@ -20,13 +20,8 @@ const threadSchema = new Schema({
 
   threadType: {
     type: String,
-    enum: ['Issues', 'Suggestions', 'Project Sharing', 'Feedback', 'General'],
+    enum: ['Issues', 'Suggestions', 'Projects', 'Feedback', 'General'],
     required: true
-  },
-
-  comment: {
-    type: Schema.Types.ObjectId,
-    ref: 'Comment',
   },
 
   briefDescription: {
