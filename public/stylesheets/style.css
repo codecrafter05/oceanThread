@@ -360,6 +360,33 @@ nav {
   margin-bottom: 30px;
 }
 
+.add-img {
+  height: 80vh;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+
+}
+
+.thread-new-image {
+  margin-right: 30px;
+}
+
+.thread-new-form {
+  z-index: 2;
+}
+
+@media (max-width: 1199px) {
+  .thread-show-content {
+      padding-left: 70px;
+      padding-right: 70px;
+  }
+  .thread-new-image {
+  display: none;
+  
+  }
+}
+
 /*------ THREADS SHOW PAGE - ALI HAJI -----*/
 
 .thread-show-title {
