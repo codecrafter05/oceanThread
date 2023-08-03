@@ -7,47 +7,48 @@
         </div>
         <div class="thread-new-form col-7">
             <h3 class="thread-new-header">Create a New Thread</h3>
-      <form action="/threads" method="post">
-
-        <div class="form-group row">
+      <form action="/threads/<%= user._id %>" method="post">
+          <div class="form-group row">
             <label for="title">Title</label>
             <input type="text" class="form-control" name="title" id="title" placeholder="Enter Thread Title">
-        </div>
-        <div class="form-group row">
+          </div>
+          <div class="form-group row">
             <label for="briefDescription">Description:</label>
-            <input type="text" class="form-control" name="briefDescription" id="briefDescription" placeholder="Enter A Brief Description">
-        </div>
-        <div class="form-group row">
+            <input type="text" class="form-control" name="briefDescription" id="briefDescription"
+              placeholder="Enter A Brief Description">
+          </div>
+          <div class="form-group row">
             <label for="content">Content:</label>
-            <textarea class="form-control" name="content" id="content" cols="30" rows="10" placeholder="Write Your Thread Content"></textarea>
-        </div>
-        <div class="form-group row">
+            <textarea class="form-control" name="content" id="content" cols="30" rows="10"
+              placeholder="Write Your Thread Content"></textarea>
+          </div>
+          <div class="form-group row">
             <label for="cohort">Thread Cohort:</label>
             <select name="cohort" id="cohorts" class="form-select">
-                <option value="General">General</option>
-                <option value="SEI">Software Engineering Immersive</option>
-                <option value="DAI">Data Analytics</option>
-                <option value="UI/UX">User Interface / User Experience</option>
-              </select>
-        </div>
-        <div class="form-group row">
+              <option value="General">General</option>
+              <option value="SEI">Software Engineering Immersive</option>
+              <option value="DAI">Data Analytics</option>
+              <option value="UI/UX">User Interface / User Experience</option>
+            </select>
+          </div>
+          <div class="form-group row">
             <label for="threadType">Thread Type:</label>
             <select name="threadType" id="type" class="form-select">
               <option value="General">General</option>
               <option value="Feedback">Feedback</option>
               <option value="Issues">Issues</option>
               <option value="Suggestions">Suggestions</option>
-              <option value="Project Sharing">Project Sharing</option>
+              <option value="Projects">Projects</option>
             </select>
-        </div>
+          </div>
 
-        <input type="hidden" value="<%=user.avatar %>" id="avatar" name="avatar">
-        <input type="hidden" value="<%=user.name %>" id="author" name="author">
-        <input type="hidden" value="<%=user._id %>" id="authorId" name="authorId">
+          <input type="hidden" value="<%=user.avatar %>" id="avatar" name="avatar">
+          <input type="hidden" value="<%=user.name %>" id="author" name="author">
+          <input type="hidden" value="<%=user._id %>" id="authorId" name="authorId">
 
-        <input type="submit" value="Create Thread" class="button-5 thread-submit">
-  
-      </form>
+          <input type="submit" value="Create Thread" class="button-5 thread-submit">
+
+        </form>
       </div>
     </div>
   </div>
