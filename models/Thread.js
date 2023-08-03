@@ -24,6 +24,11 @@ const threadSchema = new Schema({
     required: true
   },
 
+  comment: {
+    type: Schema.Types.ObjectId,
+    ref: 'Comment',
+  },
+
   briefDescription: {
     type: String,
     required: true
