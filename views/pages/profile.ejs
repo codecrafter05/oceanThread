@@ -3,7 +3,6 @@
   <h1>Profile Page</h1>
   <hr class="mt-4 mb-4" />
 
-
   <div class="profileBox">
     <h2>
       <%= user.name %>
@@ -49,7 +48,6 @@
                   </div>
                 </div>
 
-
                 <div class="thread-container-type d-flex flex-row">
                   <span class="thread-cohort">
                     <%= thread.cohort %>
@@ -58,6 +56,11 @@
                     <%= thread.threadType %>
                   </span>
                   <a href="/profile/threads-update?id=<%= thread._id %>">Edit</a>
+
+                  <form action="/profile/<%= thread._id %>/deleteThread?_method=DELETE" method="POST">
+                    <input type="hidden" name="id" value="<%= thread._id %>">
+                    <input type="submit" value='delete' />
+                  </form>
                 </div>
               </div>
               <h5>
@@ -66,9 +69,7 @@
 
               <% }); %>
           </div>
-
         </div>
-
       </div>
     </div>
 
