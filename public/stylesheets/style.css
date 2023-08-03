@@ -360,6 +360,33 @@ nav {
   margin-bottom: 30px;
 }
 
+.add-img {
+  height: 80vh;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+
+}
+
+.thread-new-image {
+  margin-right: 30px;
+}
+
+.thread-new-form {
+  z-index: 2;
+}
+
+@media (max-width: 1199px) {
+  .thread-show-content {
+      padding-left: 70px;
+      padding-right: 70px;
+  }
+  .thread-new-image {
+  display: none;
+  
+  }
+}
+
 /*------ THREADS SHOW PAGE - ALI HAJI -----*/
 
 .thread-show-title {
@@ -381,6 +408,48 @@ nav {
   .thread-show-content {
       padding-left: 70px;
       padding-right: 70px;
+  }
+
+  .thread-comment-status {
+    display: flex;
+    justify-content: center;
+    color: #023047;
+    font-size: 20px;
+  }
+
+  .comments-container {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .replies-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .comments-input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: yellow;
+    margin-top: 20px;
+    margin-bottom: 20px
+
+  }
+
+  .comment-text {
+    color: #023047;
+    font-size: 16px;
+  }
+
+  .replies-text {
+    color: #023047;
+    font-size: 16px;
+  }
+
+  .comment-write {
+    text-align: center;
   }
 }
 
