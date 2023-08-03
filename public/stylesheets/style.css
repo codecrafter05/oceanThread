@@ -409,6 +409,48 @@ nav {
       padding-left: 70px;
       padding-right: 70px;
   }
+
+  .thread-comment-status {
+    display: flex;
+    justify-content: center;
+    color: #023047;
+    font-size: 20px;
+  }
+
+  .comments-container {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .replies-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .comments-input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: yellow;
+    margin-top: 20px;
+    margin-bottom: 20px
+
+  }
+
+  .comment-text {
+    color: #023047;
+    font-size: 16px;
+  }
+
+  .replies-text {
+    color: #023047;
+    font-size: 16px;
+  }
+
+  .comment-write {
+    text-align: center;
+  }
 }
 
 /* ----- SCROLL BAR - RASHID -----*/
