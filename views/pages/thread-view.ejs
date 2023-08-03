@@ -1,48 +1,43 @@
 <%- include('../partials/header') %>
   <div id="thread-view">
     <div class="container pt-5 pb-5">
-      <h1>
-        <%= thread.title %>
-      </h1>
-      <div>
-        <hr class="mt-4 mb-4" />
-        <div class="thread-container d-flex flex-column mb-4">
+      
 
+  
 
-          <h4>
-            <%= thread.briefDescription %>
-          </h4>
+          <div class="thread-container d-flex flex-column mb-4">
+          <span class="thread-show-title">- <%= thread.title %> -</span>
 
-          <div class="thread-info d-flex flex-row justify-content-between">
-            <div class="d-flex flex-row">
-              <img src='<%= thread.avatar %>' />
+          <div class="thread-info d-flex flex-row justify-content-between row">
+            <div class="d-flex flex-row col-8">
+              <img class="thread-avatar" src='<%= thread.avatar %>' />
               <div class="d-flex flex-column">
-                <h6>
+                <span class="thread-author">
                   <%= thread.author %>
-                </h6>
-                <h6>
+                </span>
+                <span class="thread-createdAt">
                   <%= thread.createdAt %>
-                </h6>
+                </span>
               </div>
             </div>
 
 
-            <div class="thread-container-type d-flex flex-row">
-              <span class="thread-cohort">
+            <div class="thread-container-type d-flex flex-row col-4 flex-wrap justify-content-end">
+              <span class="thread-cohort button-34">
                 <%= thread.cohort %>
               </span>
-              <span class="thread-type">
+              <span class="thread-type button-35">
                 <%= thread.threadType %>
               </span>
             </div>
           </div>
-          <h5>
+          <span class="thread-show-content">
             <%= thread.content %>
-          </h5>
-
+          </span>
         </div>
+   
 
-      </div>
+  
 
     </div>
   </div>

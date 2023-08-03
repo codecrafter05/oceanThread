@@ -360,6 +360,29 @@ nav {
   margin-bottom: 30px;
 }
 
+/*------ THREADS SHOW PAGE - ALI HAJI -----*/
+
+.thread-show-title {
+  font-size: 30px;
+  color: #023047;
+  display: flex; 
+  justify-content: center
+}
+
+.thread-show-content {
+  font-size: 1.25em;
+  line-height: calc(1ex / 0.32);
+  margin: calc(1ex / 0.32) 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (min-width: 1200px) {
+  .thread-show-content {
+      padding-left: 70px;
+      padding-right: 70px;
+  }
+}
 
 /* ----- SCROLL BAR - RASHID -----*/
 .red {
