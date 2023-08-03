@@ -21,21 +21,26 @@
           </div>
           <div class="form-group row">
             <label for="cohort">Thread Cohort:</label>
-            <select name="cohort" id="cohorts" class="form-control" value="<%=thread.cohort %>">
+            <select name="cohort" id="cohorts" class="form-control">
               <option value="General">General</option>
               <option value="SEI">Software Engineering Immersive</option>
               <option value="DAI">Data Analytics</option>
               <option value="UI/UX">User Interface / User Experience</option>
+              <option selected value="<%=thread.cohort %>">
+                <%=thread.cohort %>
             </select>
           </div>
           <div class="form-group row">
             <label for="threadType">Thread Type:</label>
-            <select name="threadType" id="type" class="form-control" value="<%=thread.threadType %>">
+            <select name="threadType" id="type" class="form-control">
               <option value=" General">General</option>
               <option value="Feedback">Feedback</option>
               <option value="Issues">Issues</option>
               <option value="Suggestions">Suggestions</option>
               <option value="Projects">Projects</option>
+              <option selected value="<%=thread.threadType %>">
+                <%=thread.threadType %>
+              </option>
             </select>
           </div>
 
