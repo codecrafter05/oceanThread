@@ -6,7 +6,7 @@ const threadsCtrl = require('../controllers/threads');
 router.get('/threads', threadsCtrl.threadsPage)
 router.get('/threads/threads-new', threadsCtrl.threadsNew)
 router.get('/threads/thread-view', threadsCtrl.threadsShow)
-router.post('/threads', threadsCtrl.createThread)
+router.post('/threads/:id', threadsCtrl.createThread)
 
 
 

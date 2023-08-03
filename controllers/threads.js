@@ -36,11 +36,19 @@ async function threadsNew(req, res,) {
 async function createThread(req, res) {
   try {
     const thread = await Thread.create(req.body);
-    res.redirect('/threads')
-    // User.threadsCreated += 1;
+    let userId = req.params.id;
+    const user = await User.findById(userId)
+    console.log(` `)
+    console.log(` `)
+    console.log(`userID ${userId}`)
+    console.log(`user ${JSON.stringify(user)}`)
+    console.log(`user.threadsCreated ${JSON.stringify(user.threadsCreated)}`)
+    user.threadsCreated += 1;
+    await user.save();
+    res.redirect('/threads');
   }
   catch (err) {
-    console.log(err)
+    console.log(err);
     res.render('pages/threads-new');
   }
 }
