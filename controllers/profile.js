@@ -36,10 +36,22 @@ async function threadsUpdate(req, res,) {
   }
 };
 
+async function threadsDelete(req, res) {
+  try {
+    console.log(`id ${req.params.id}`)
+    await Thread.findByIdAndDelete(req.params.id)
+    res.redirect('/threads')
+  }
+  catch (err) {
+    console.log(err)
+  }
+};
+
 
 
 module.exports = {
   profilePage,
   threadsUpdate,
   threadsUpdateShow,
+  threadsDelete,
 }
