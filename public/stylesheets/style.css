@@ -568,6 +568,8 @@ nav {
     margin: auto;
 }
 
+
+
 .table-responsive {
     overflow-x: auto;
 }
@@ -592,4 +594,10 @@ nav {
 
 .dataTablesCard tbody tr:not(:last-child) {
     border-bottom: 1px solid #8ECAE6;
+}
+
+#profile {
+  background-color: #0275d8;
+  /* background-image: url("/images/bg-1.png");
+  background-size: cover; */
 }
