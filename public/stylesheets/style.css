@@ -563,17 +563,10 @@ nav {
   padding: 1.875rem;
 }
 
-body {
-    background-color: #023047; /* Dark background color */
-    color: #fff;
-}
-
 .scroll-snap-card {
     max-width: 1200px;
     margin: auto;
 }
-
-
 
 .table-responsive {
     overflow-x: auto;
