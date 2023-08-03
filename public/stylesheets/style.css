@@ -79,7 +79,98 @@ nav {
   right: 150px;
 }
 
-/*-- LOGIN BUTTON - ALI HAJI ---*/
+/*--- WAVE BUTTON - ALI HAJI ---*/
+
+.wave-btn {
+  align-items: center;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  overflow: hidden;
+  
+}
+
+.wave-btn span {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  font-family: Arial;
+  letter-spacing: 8px;
+  z-index: 1;
+}
+
+.wave-btn .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 270px;
+  height: 200px;
+  background: #0275d8;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+  transition: .5s;
+}
+
+.wave-btn .liquid::after,
+.wave-btn .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+
+.wave-btn .liquid::before {
+  
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+.wave-btn .liquid::after {
+  
+  border-radius: 40%;
+  background: rgba(20, 20, 20, .5);
+  animation: animate 10s linear infinite;
+}
+
+.wave-btn:hover .liquid{
+  top: -120px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+/*--- LOGIN BUTTON - ALI HAJI ---*/
 
 .button-5 {
   align-items: center;
@@ -126,52 +217,109 @@ nav {
   transform: translateY(0);
 }
 
+/*--- COHORT AND TYPE BUTTONS/LABELS - ALI HAJI ---*/
+
+.button-34 {
+  background: #0275d8;
+  border-radius: 999px;
+  box-shadow: #0275d8 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
 
 
 
 
 /*----- THREADS PAGE - ALI HAJI -----*/
-/* #threads {
-
-} */
 
 .thread-container {
-  background-color: lightcyan;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   padding: 10px 30px;
-  
+}
+
+.thread-contatiner-type {
+  width: 100px;
 }
 
 .thread-cohort {
-  background-color: #00B7FF;
   border-radius: 10px;
   padding: 3px 15px;
-  border: 1px solid lightblue;
-  color: blue;
   height: 35px;
   margin-right: 15px;
+  min-width: auto;
+  margin-bottom: 10px;
+
 }
 
 .thread-type {
-  background-color: lightpink;
   border-radius: 10px;
   padding: 3px 15px;
-  border: 1px solid blueviolet;
-  color: purple;
   height: 35px;
   margin-right: 15px;
+  min-width: auto;
 }
 
-.thread-status {
-  background-color: orange;
-  border-radius: 10px;
-  padding: 3px 15px;
-  border: 1px solid lightyellow;
-  color: red;
-  height: 35px;
+.threads-filter {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 10px;
+  padding: 10px 30px;
+  width: 100%;
 }
-/* 
-scroll bar-Rashid  */
+
+.threads-select-label{
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.thread-title {
+  text-decoration: none;
+  font-size: 30px;
+  color: #023047;
+  margin-bottom: 20px;
+}
+
+.thread-avatar {
+  height: 50px;
+  border-radius: .4rem;
+  margin-right: 20px;
+}
+
+.thread-author {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #023047;
+}
+
+.thread-createdAt {
+  color: gray;
+}
+
+.thread-info {
+  margin-bottom: 30px;
+}
+
+.thread-description {
+  font-size: 18px;
+  color: #023047;
+  margin-bottom: 30px;
+}
+
+/* ----- SCROLL BAR - RASHID -----*/
 .red {
   background-color: #f43f5e;
 }
