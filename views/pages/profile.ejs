@@ -1,5 +1,10 @@
 <%- include('../partials/header') %>
 
+  <div class="thread-info d-flex flex-row justify-content-center row">
+    <button class="button-5">
+      <%= %>
+    </button>
+  </div>
 
   <div id="threads">
     <div class="container pt-5 pb-5">
@@ -41,7 +46,7 @@
 
             <div class="thread-container-type d-flex flex-row col-12 flex-wrap justify-content-end">
               <button type="button" class="button-5" data-toggle="modal" data-target="#exampleModalLong">
-                Delete
+                <img src='/images/trash_icon.png' style="width: 20px;"> Delete
               </button>
 
               <!-- Modal -->
@@ -50,7 +55,7 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                      <h5 class="modal-title" id="exampleModalLongTitle">Confirm Below</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -69,7 +74,8 @@
                 </div>
               </div>
 
-              <a href="/profile/threads-update?id=<%= thread._id %>" class="button-5">Edit</a>
+              <a href="/profile/threads-update?id=<%= thread._id %>" class="button-5"><img src='/images/pen_icon.png'
+                  style="width: 25px;"> Edit</a>
             </div>
 
 
