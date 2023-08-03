@@ -36,7 +36,20 @@
           </span>
         </div>
    
-
+        <div class="thread-container d-flex flex-column mb-4">
+          <span class="thread-comment-status">No Comments Yet</span>
+          <form action="" method="post" class="comments-input">
+            <textarea class="form-control comment-write" name="comment" id="comment" cols="30" rows="2" placeholder="Add a Comment ..."></textarea>
+          </form>
+          <div class="comments-container d-flex">
+            <img class="thread-avatar" src='<%= thread.avatar %>' />
+            <p class="comment-text">this is my comment to you human beings</p>
+          </div>
+          <div class="replies-container d-flex">
+            <img class="thread-avatar" src='<%= thread.avatar %>' />
+            <p class="replies-text">this is my comment to you human beings</p>
+          </div>
+        </div>
   
 
     </div>
