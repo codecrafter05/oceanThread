@@ -1,15 +1,15 @@
 <%- include('../partials/header') %>
 
 
-    <div id="threads">
-      <div class="container pt-5 pb-5">
-        <h1>My Threads</h1>
-        <div>
-          <hr class="mt-4 mb-4" />
-          <% threads.forEach(thread=> { %>
-            <div class="thread-container d-flex flex-column mb-4">
+  <div id="threads">
+    <div class="container pt-5 pb-5">
+      <h1>My Threads</h1>
+      <div>
+        <hr class="mt-4 mb-4" />
+        <% threads.forEach(thread=> { %>
+          <div class="thread-container d-flex flex-column mb-4">
             <a class="thread-title" href="/threads/thread-view?id=<%= thread._id %>">
-                <%= thread.title %>
+              <%= thread.title %>
             </a>
 
             <div class="thread-info d-flex flex-row justify-content-between row">
@@ -40,20 +40,45 @@
             </span>
 
             <div class="thread-container-type d-flex flex-row col-12 flex-wrap justify-content-end">
-              <a href="/profile/threads-update?id=<%= thread._id %>" class="button-5">Edit</a>
-              <form action="/profile/<%= thread._id %>/deleteThread?_method=DELETE" method="POST" >
-                <input type="hidden" name="id" value="<%= thread._id %>" class="button-5">
-                <input type="submit" value='Delete' class="button-5" />
-              </form>
-            </div>
-          
+              <button type="button" class="button-5" data-toggle="modal" data-target="#exampleModalLong">
+                Delete
+              </button>
 
-         
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Are you sure you want to delete this?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <form action="/profile/<%= thread._id %>/deleteThread?_method=DELETE" method="POST">
+                        <input type="hidden" name="id" value="<%= thread._id %>" class="button-5">
+                        <input type="submit" value='Yes' class="btn btn-secondary" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="/profile/threads-update?id=<%= thread._id %>" class="button-5">Edit</a>
+            </div>
+
+
+
 
           </div>
-            <% }); %>
-        </div>
+          <% }); %>
       </div>
     </div>
+  </div>
 
-    <%- include('../partials/footer') %>
+  <%- include('../partials/footer') %>
