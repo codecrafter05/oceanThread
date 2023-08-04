@@ -26,22 +26,25 @@
         <li class="nav-item active">
           <a class="nav-link" href="/threads">Threads</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/leaderboards">Leaderboards</a>
-        </li>
 
         <% if (user) { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/leaderboards/<%= user._id %>">Leaderboards</a>
+          </li>
           <li><a href="/profile?id=<%= user._id %>" class="nav-link">Profile</a></li>
           <li><a href="/logout" class="nav-link">Logout</a></li>
           <li class="navigation-profile">
             <div>
-              <a href="/profile"><img src='<%= user.avatar %>' class="navUserImg"></a>
+              <a href="/profile?id=<%= user._id %>"><img src='<%= user.avatar %>' class="navUserImg"></a>
               <span class="nav-name">
                 <%= user.name %>
             </div>
           </li>
 
           <% } else { %>
+            <li class="nav-item">
+              <a class="nav-link" href="/leaderboards">Leaderboards</a>
+            </li>
             <li class="navigation-profile">
               <div>
                 <a href="/auth/google" class="nav-link button-5">Login</a>
