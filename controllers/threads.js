@@ -52,11 +52,11 @@ async function createThread(req, res) {
 
 async function createComment(req, res) {
   try {
+    const thread = await Thread.findById(req.query.id);
     const comment = await Comment.create(req.body);
-    res.redirect('/thread-view');
+    res.render('pages/thread-view', { thread });
   } catch (err) {
     console.log(err);
-    res.render('pages/thread-view');
   }
 }
 
