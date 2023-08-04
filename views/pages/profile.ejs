@@ -1,8 +1,14 @@
 <%- include('../partials/header') %>
 
-  <div class="thread-info d-flex flex-row justify-content-center row">
+  <div class="thread-info d-flex flex-row justify-content-evenly" style="margin-top: 20px;">
     <% if(user) { %>
       <p class="button-5"> Threads Created:
+        <%= user.threadsCreated %>
+      </p>
+      <p class="button-5"> Comments:
+        <%= user.threadsCreated %>
+      </p>
+      <p class="button-5"> Replies:
         <%= user.threadsCreated %>
       </p>
       <% }; %>
@@ -33,7 +39,7 @@
               </div>
 
 
-              <div class="thread-container-type d-flex flex-row col-4 flex-wrap justify-content-end">
+              <div class="thread-container-type d-flex flex-row col-xl-4 flex-wrap justify-content-xl-end">
                 <span class="thread-cohort button-34">
                   <%= thread.cohort %>
                 </span>
@@ -47,8 +53,11 @@
             </span>
 
             <div class="thread-container-type d-flex flex-row col-12 flex-wrap justify-content-end">
-              <button type="button" class="button-5" data-toggle="modal" data-target="#exampleModalLong">
-                <img src='/images/trash_icon.png' style="width: 20px;"> Delete
+              <a href="/profile/threads-update?id=<%= thread._id %>" class="button-edit"
+                style="margin-right: 20px;"><img src='/images/pen_icon.png' style=" margin-right: 10px;">
+                Edit</a>
+              <button type="button" class="button-delete" data-toggle="modal" data-target="#exampleModalLong">
+                <img src='images/trash-icon.png' style="width: 20px; margin-right: 10px;"> Delete
               </button>
 
               <!-- Modal -->
@@ -75,9 +84,6 @@
                   </div>
                 </div>
               </div>
-
-              <a href="/profile/threads-update?id=<%= thread._id %>" class="button-5"><img src='/images/pen_icon.png'
-                  style="width: 25px;"> Edit</a>
             </div>
 
 
