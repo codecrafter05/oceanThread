@@ -4,10 +4,12 @@ const Thread = require('../models/Thread');
 
 async function profilePage(req, res) {
   try {
+    const users = await User.findById(req.query.id)
     const threads = await Thread.find({ authorId: req.query.id })
-    res.render('pages/profile', { threads });
+    res.render('pages/profile', { threads, users });
   }
   catch (err) {
+    res.redirect('/error')
     console.log(err)
   }
 }
@@ -18,6 +20,7 @@ async function threadsUpdateShow(req, res,) {
     res.render(`pages/threads-update`, { thread });
   }
   catch (err) {
+    res.redirect('/error')
     console.log(err)
   }
 };
@@ -32,6 +35,7 @@ async function threadsUpdate(req, res,) {
     res.redirect('/threads')
   }
   catch (err) {
+    res.redirect('/error')
     console.log(err)
   }
 };
@@ -43,6 +47,7 @@ async function threadsDelete(req, res) {
     res.redirect('/threads')
   }
   catch (err) {
+    res.redirect('/error')
     console.log(err)
   }
 };
