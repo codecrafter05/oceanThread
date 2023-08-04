@@ -1,9 +1,11 @@
 <%- include('../partials/header') %>
 
   <div class="thread-info d-flex flex-row justify-content-center row">
-    <button class="button-5">
-      <%= %>
-    </button>
+    <% if(user) { %>
+      <button class="button-5"> Threads Created:
+        <%= user.threadsCreated %>
+      </button>
+      <% }; %>
   </div>
 
   <div id="threads">

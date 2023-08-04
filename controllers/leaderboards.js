@@ -8,6 +8,7 @@ async function leaderPage(req, res) {
     res.render('pages/leaderboards', { users, currentUser });
   }
   catch (err) {
+    res.redirect('/error')
     console.log(err)
   }
 };

@@ -9,6 +9,7 @@ async function threadsPage(req, res) {
     const users = await User.find();
     res.render('pages/threads', { threads, users });
   } catch (err) {
+    res.redirect('/error')
     console.log(err);
   }
 }
@@ -18,6 +19,7 @@ async function threadsShow(req, res) {
     const thread = await Thread.findById(req.query.id);
     res.render('pages/thread-view', { thread });
   } catch (err) {
+    res.redirect('/error')
     console.log(err);
   }
 }
@@ -27,6 +29,7 @@ async function threadsNew(req, res) {
     const users = await User.find();
     res.render('pages/threads-new', { users });
   } catch (err) {
+    res.redirect('/error')
     console.log(err);
   }
 }
@@ -45,8 +48,8 @@ async function createThread(req, res) {
     res.redirect('/threads');
   }
   catch (err) {
+    res.redirect('/error')
     console.log(err);
-    res.render('pages/threads-new');
   }
 };
 
