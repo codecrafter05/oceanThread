@@ -55,7 +55,13 @@
                     <%= thread.author %>
                   </span>
                   <span class="thread-createdAt">
-                    <%= thread.createdAt %>
+                    <%
+                    let datess = JSON.stringify(thread.createdAt);           
+                    let filteredData = datess.split("."); 
+                    let filteredData2 = filteredData[0].split("T")
+                     %>
+                    <%= filteredData2[0].substring(1) %>
+                    <%= filteredData2[1] %>
                   </span>
                 </div>
               </div>
