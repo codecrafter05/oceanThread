@@ -479,7 +479,20 @@ nav {
 
   .thread-new-image {
     display: none;
+  }
 
+  .thread-cohort {
+    font-size: 14px;
+  }
+
+  .thread-type {
+    font-size: 14px;
+  }
+  .replies-text{
+    color: #023047;
+  }
+  .comment-text{
+    color: #023047;
   }
 }
 
