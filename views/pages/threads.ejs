@@ -5,7 +5,7 @@
       <div class="threads-header d-flex justify-content-between">
         <h1>Threads</h1>
         <% if(user){ %>
-          <a href="/threads/threads-new" class="wave-btn">        
+          <a href="/threads/threads-new" class="wave-btn">
             <span>Create Thread</span>
             <div class="liquid"></div>
           </a>
@@ -13,69 +13,69 @@
       </div>
       <div class="threads-filter d-flex justify-content-between">
         <div class="form-group col-3">
-            <label for="cohort" class="threads-select-label">Cohort:</label>
-            <select name="cohort" id="cohorts" class="form-select">
-                <option value="All">All</option>
-                <option value="General">General</option>
-                <option value="SEI">Software Engineering Immersive</option>
-                <option value="DAI">Data Analytics</option>
-                <option value="UI/UX">User Interface / User Experience</option>
-            </select>
+          <label for="cohort" class="threads-select-label">Cohort:</label>
+          <select name="cohort" id="cohorts" class="form-select">
+            <option value="All">All</option>
+            <option value="General">General</option>
+            <option value="SEI">Software Engineering Immersive</option>
+            <option value="DAI">Data Analytics</option>
+            <option value="UI/UX">User Interface / User Experience</option>
+          </select>
         </div>
         <div class="form-group col-3">
-            <label for="threadType" class="threads-select-label">Thread Type:</label>
-            <select name="threadType" id="type" class="form-select">
-              <option value="All">All</option>
-              <option value="General">General</option>
-              <option value="Feedback">Feedback</option>
-              <option value="Issues">Issues</option>
-              <option value="Suggestions">Suggestions</option>
-              <option value="Project Sharing">Project Sharing</option>
-            </select>
+          <label for="threadType" class="threads-select-label">Type:</label>
+          <select name="threadType" id="type" class="form-select">
+            <option value="All">All</option>
+            <option value="General">General</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Issues">Issues</option>
+            <option value="Suggestions">Suggestions</option>
+            <option value="Project Sharing">Project Sharing</option>
+          </select>
         </div>
         <button class="button-5 col-3">Clear Filters</button>
-        
+
       </div>
       <div>
         <hr class="mt-4 mb-4" />
-      
-         
-
-              <% threads.forEach(thread=> { %>
-                <div class="thread-container d-flex flex-column mb-4">
-                <a class="thread-title" href="/threads/thread-view?id=<%= thread._id %>">
-                    <%= thread.title %>
-                </a>
-
-                <div class="thread-info d-flex flex-row justify-content-between row">
-                  <div class="d-flex flex-row col-8">
-                    <img class="thread-avatar" src='<%= thread.avatar %>' />
-                    <div class="d-flex flex-column">
-                      <span class="thread-author">
-                        <%= thread.author %>
-                      </span>
-                      <span class="thread-createdAt">
-                        <%= thread.createdAt %>
-                      </span>
-                    </div>
-                  </div>
 
 
-                  <div class="thread-container-type d-flex flex-row col-4 flex-wrap justify-content-end">
-                    <span class="thread-cohort button-34">
-                      <%= thread.cohort %>
-                    </span>
-                    <span class="thread-type button-35">
-                      <%= thread.threadType %>
-                    </span>
-                  </div>
+
+        <% threads.forEach(thread=> { %>
+          <div class="thread-container d-flex flex-column mb-4">
+            <a class="thread-title" href="/threads/thread-view?id=<%= thread._id %>">
+              <%= thread.title %>
+            </a>
+
+            <div class="thread-info d-flex flex-row justify-content-between row">
+              <div class="d-flex flex-row col-8">
+                <img class="thread-avatar" src='<%= thread.avatar %>' />
+                <div class="d-flex flex-column">
+                  <span class="thread-author">
+                    <%= thread.author %>
+                  </span>
+                  <span class="thread-createdAt">
+                    <%= thread.createdAt %>
+                  </span>
                 </div>
-                <span class="thread-description">
-                  <%= thread.briefDescription %>
+              </div>
+
+
+              <div class="thread-container-type d-flex flex-row col-xl-4 flex-wrap justify-content-xl-end">
+                <span class="thread-cohort button-34">
+                  <%= thread.cohort %>
+                </span>
+                <span class="thread-type button-35">
+                  <%= thread.threadType %>
                 </span>
               </div>
-                <% }); %>
-       
+            </div>
+            <span class="thread-description">
+              <%= thread.briefDescription %>
+            </span>
+          </div>
+          <% }); %>
+
 
       </div>
 
