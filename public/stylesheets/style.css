@@ -58,7 +58,7 @@ p {
 /*----- NAVIGATION BAR - ALI HAJI -----*/
 
 nav {
-  box-shadow: 0 4px 4px -2px rgba(0,0,0,.4);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, .4);
 }
 
 .navUserImg {
@@ -70,9 +70,9 @@ nav {
 }
 
 .navigation-profile {
- margin-left: auto;
- position: absolute;
- right: 150px;
+  margin-left: auto;
+  position: absolute;
+  right: 150px;
 }
 
 .navigation-login {
@@ -91,7 +91,7 @@ nav {
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
@@ -108,7 +108,7 @@ nav {
   vertical-align: baseline;
   width: auto;
   overflow: hidden;
-  
+
 }
 
 .wave-btn span {
@@ -144,20 +144,20 @@ nav {
 }
 
 .wave-btn .liquid::before {
-  
+
   border-radius: 45%;
   background: rgba(20, 20, 20, 1);
   animation: animate 5s linear infinite;
 }
 
 .wave-btn .liquid::after {
-  
+
   border-radius: 40%;
   background: rgba(20, 20, 20, .5);
   animation: animate 10s linear infinite;
 }
 
-.wave-btn:hover .liquid{
+.wave-btn:hover .liquid {
   top: -120px;
 }
 
@@ -165,6 +165,7 @@ nav {
   0% {
     transform: translate(-50%, -75%) rotate(0deg);
   }
+
   100% {
     transform: translate(-50%, -75%) rotate(360deg);
   }
@@ -183,7 +184,7 @@ nav {
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
@@ -217,6 +218,100 @@ nav {
   transform: translateY(0);
 }
 
+/*----- DELETE BUTTON - ALI HAJI -----*/
+
+.button-delete {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #d92232;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-delete:hover,
+.button-delete:focus {
+  background-color: #f03949;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-delete:hover {
+  transform: translateY(-1px);
+}
+
+.button-delete:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+/*----- EDIT BUTTON - ALI HAJI -----*/
+
+.button-edit {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #0275d8;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-edit:hover,
+.button-edit:focus {
+  background-color: #219EBC;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-edit:hover {
+  transform: translateY(-1px);
+}
+
+.button-edit:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
 /*--- COHORT AND TYPE BUTTONS/LABELS - ALI HAJI ---*/
 
 .button-34 {
@@ -225,7 +320,7 @@ nav {
   box-shadow: #0275d8 0 10px 20px -10px;
   box-sizing: border-box;
   color: #FFFFFF;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -246,7 +341,7 @@ nav {
   box-shadow: #fa6400 0 10px 20px -10px;
   box-sizing: border-box;
   color: #FFFFFF;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -306,7 +401,7 @@ nav {
   width: 100%;
 }
 
-.threads-select-label{
+.threads-select-label {
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -378,12 +473,13 @@ nav {
 
 @media (max-width: 1199px) {
   .thread-show-content {
-      padding-left: 70px;
-      padding-right: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
+
   .thread-new-image {
-  display: none;
-  
+    display: none;
+
   }
 }
 
@@ -392,7 +488,7 @@ nav {
 .thread-show-title {
   font-size: 30px;
   color: #023047;
-  display: flex; 
+  display: flex;
   justify-content: center
 }
 
@@ -406,8 +502,8 @@ nav {
 
 @media (min-width: 1200px) {
   .thread-show-content {
-      padding-left: 70px;
-      padding-right: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .thread-comment-status {
@@ -427,7 +523,7 @@ nav {
     margin-left: 100px;
     margin-right: 100px;
   }
-  
+
   .comments-input {
     display: flex;
     justify-content: center;
@@ -435,7 +531,6 @@ nav {
     background-color: yellow;
     margin-top: 20px;
     margin-bottom: 20px
-
   }
 
   .comment-text {
@@ -524,7 +619,7 @@ nav {
 }
 
 .profileImage {
-  background: linear-gradient(to right,rgb(54, 54, 54),rgb(32, 32, 32));
+  background: linear-gradient(to right, rgb(54, 54, 54), rgb(32, 32, 32));
   margin-top: 20px;
   width: 170px;
   height: 170px;
@@ -564,36 +659,36 @@ nav {
 }
 
 .scroll-snap-card {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 
 
 .table-responsive {
-    overflow-x: auto;
+  overflow-x: auto;
 }
 
 .dataTablesCard {
-    width: 100%;
+  width: 100%;
 }
 
 .dataTablesCard thead {
-    background-color: #222;
-    color: #8ECAE6;
+  background-color: #222;
+  color: #8ECAE6;
 }
 
 .dataTablesCard tbody tr {
-    background-color: #444;
-    color: #8ECAE6;
+  background-color: #444;
+  color: #8ECAE6;
 }
 
 .dataTablesCard tbody tr:nth-child(even) {
-    background-color: #555;
+  background-color: #555;
 }
 
 .dataTablesCard tbody tr:not(:last-child) {
-    border-bottom: 1px solid #8ECAE6;
+  border-bottom: 1px solid #8ECAE6;
 }
 
 #profile {
