@@ -58,6 +58,15 @@ p {
   box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
+/* Media queries for responsiveness */
+@media (max-width: 700px) {
+  .video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 /*----- NAVIGATION BAR - ALI HAJI -----*/
 
 nav {
@@ -498,12 +507,58 @@ nav {
   .thread-type {
     font-size: 14px;
   }
-  .replies-text{
+  
+  .comment-text {
     color: #023047;
+    font-size: 16px;
   }
-  .comment-text{
+
+  .comment-author {
+    color: #0275d8;
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+
+  .replies-text {
     color: #023047;
+    font-size: 16px;
   }
+
+  .reply-author {
+    color: #FB8500;
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+
+  .replies-container {
+    margin-left: 40px;
+  }
+
+  .replies-avatar {
+    height: 40px;
+    border-radius: .4rem;
+    margin-right: 20px;
+  }
+
+  .wave-btn {
+    width: 150px;
+  }
+
+  .navUserImg {
+    display: none;
+  }
+
+  .nav-name {
+    display: none;
+  }
+
+  .navbar-nav .nav-link {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+
 }
 
 /*------ THREADS SHOW PAGE - ALI HAJI -----*/
@@ -545,6 +600,7 @@ nav {
   .replies-container {
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 20px;
   }
 
   .comments-input {
@@ -564,6 +620,7 @@ nav {
   .comment-author {
     color: #0275d8;
     font-weight: bold;
+    margin-bottom: 2px;
   }
 
   .replies-text {
@@ -578,6 +635,12 @@ nav {
 
   .comment-write {
     text-align: center;
+  }
+
+  .replies-avatar {
+    height: 40px;
+    border-radius: .4rem;
+    margin-right: 20px;
   }
 }
 
@@ -726,4 +789,10 @@ nav {
   background-color: #0275d8;
   /* background-image: url("/images/bg-1.png");
   background-size: cover; */
+}
+
+/* ----- PROFILE PAGE CONTRIBUTIONS  - HAMAD -----*/
+
+.profileBox {
+  box-shadow: 0 9px 10px -2px rgba(0, 0, 0, 0.129);
 }
