@@ -16,13 +16,19 @@
                   <%= thread.author %>
                 </span>
                 <span class="thread-createdAt">
-                  <%= thread.createdAt %>
+                  <%
+                  let datess = JSON.stringify(thread.createdAt);           
+                  let filteredData = datess.split("."); 
+                  let filteredData2 = filteredData[0].split("T")
+                   %>
+                  <%= filteredData2[0].substring(1) %>
+                  <%= filteredData2[1] %>
                 </span>
               </div>
             </div>
 
 
-            <div class="thread-container-type d-flex flex-row col-xl-4 flex-wrap justify-content-xl-end">
+            <div class="thread-container-type d-flex flex-row col-xl-4 flex-wrap justify-content-xl-end" style="margin-top: 10px;">
               <span class="thread-cohort button-34">
                 <%= thread.cohort %>
               </span>
@@ -42,10 +48,20 @@
           <% }; %>
 
           <% thread.comments.forEach(element => { %>
-          <div class="comments-container d-flex">
-            <p class="comment-text"><%= element %></p>
-          </div>
+            <div class="mb-3">
+              <div class="comments-container d-flex">
+                <img class="thread-avatar" src='<%= thread.avatar %>' />
+                <p class="comment-text"><%= thread.author %> <br><%= element %></p>
+              </div>
+              <div class="replies-container d-flex">
+                <img class="thread-avatar" src='<%= thread.avatar %>' />
+                <p class="comment-text"><%= thread.author %> <br>//INSERT REPLY HERE</p>
+              </div>
+            </div>
+      
           <% }); %>
+
+         
         
         <% if(user){ %>
           <form action="/threads/thread-view?id=<%= thread._id %>" method="post" class="comments-input">

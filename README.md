@@ -1,12 +1,10 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="public/images/logo-2.png" alt="Logo" width=80%  height="auto" />
+  <img src="public/images/logo-2.png" alt="Logo" width=90%  height="auto" />
   <br />
-
   <h1><b>oceanThreads Project</b></h1>
   <h4>Ignite exciting threads with like-minded people</h4>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -38,7 +36,7 @@ It is inspired by other knowledge markets such as stackoverflow.com, quora.com, 
 
 > “Now is no time to think of what you do not have. Think of what you can do with that there is.” ― Ernest Hemingway, The Old Man and the Sea
 
-<img src="public/images/addThread.png" alt="Screenshot" width=80% height="auto" />
+<div align="center"><img src="public/images/addThread.png" alt="Screenshot" width=70% height="auto" /></div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
