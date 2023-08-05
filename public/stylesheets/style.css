@@ -498,11 +498,36 @@ nav {
   .thread-type {
     font-size: 14px;
   }
-  .replies-text{
+  .comment-text {
     color: #023047;
+    font-size: 16px;
   }
-  .comment-text{
+
+  .comment-author {
+    color: #0275d8;
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+
+  .replies-text {
     color: #023047;
+    font-size: 16px;
+  }
+
+  .reply-author {
+    color: #FB8500;
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+
+  .replies-container {
+    margin-left: 40px;
+  }
+
+  .replies-avatar {
+    height: 40px;
+    border-radius: .4rem;
+    margin-right: 20px;
   }
 }
 
@@ -564,6 +589,7 @@ nav {
   .comment-author {
     color: #0275d8;
     font-weight: bold;
+    margin-bottom: 2px;
   }
 
   .replies-text {
@@ -578,6 +604,12 @@ nav {
 
   .comment-write {
     text-align: center;
+  }
+
+  .replies-avatar {
+    height: 40px;
+    border-radius: .4rem;
+    margin-right: 20px;
   }
 }
 
