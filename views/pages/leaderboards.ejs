@@ -7,48 +7,50 @@
         <div class="scroll-snap-card d-flex justify-content-center align-items-center">
           <div class="card-body">
             <div class="table-responsive ticket-table">
-              <table id="example" class="display dataTablesCard dataTable no-footer" style="min-width: 845px"
+              <table id="example" class="display dataTablesCard dataTable no-footer" style="min-width: 845px; color: black;"
                 role="grid" aria-describedby="example_info">
                 <thead>
                   <tr role="row">
                     <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
                       aria-sort="ascending" aria-label="S.No.: activate to sort column descending"
-                      style="width: 74.5833px;">Rank</th>
+                      style="width: 74.5833px; color: rgb(255, 255, 255);">Rank</th>
                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
-                      aria-label="Employee ID: activate to sort column ascending" style="width: 187.302px;">Name
+                      aria-label="Employee ID: activate to sort column ascending" style="width: 187.302px; color: rgb(255, 255, 255);">Name
                     </th>
                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
-                      aria-label="Name: activate to sort column ascending" style="width: 240.625px;">Threads Created
+                      aria-label="Name: activate to sort column ascending" style="width: 240.625px; color: rgb(255, 255, 255);">Threads Created
                     </th>
                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
-                      aria-label="Reply Count: activate to sort column ascending" style="width: 181.844px;">Reply Count
+                      aria-label="Reply Count: activate to sort column ascending" style="width: 181.844px; color: rgb(255, 255, 255);">Reply Count
                     </th>
                   </tr>
                 </thead>
 
                 <tbody>
-                  <% let index=0 %>
-                    <% users.forEach(user=> { %>
-                      <% index++ %>
-                        <tr class="odd" role="row">
-                          <td class="sorting_1">
-                            <%= index %>
-                          </td>
-                          <td>
-                            <%= user.name %>
-                          </td>
-                          <td>
-                            <div>
-                              <%= user.threadsCreated %>
-                            </div>
-                          </td>
-                          <td>
-                            <div>
-                              <a href="#" class="h5">Timothy L. Brodbeck</a>
-                            </div>
-                          </td>
-                          <% }); %>
+                  <% let index = 0 %>
+                  <% users.forEach(user => { %>
+                    <% index++ %>
+                    <tr class="odd" role="row">
+                      <td class="sorting_1" style="color: black; font-weight: bold;">
+                        <%= index %>
+                      </td>
+                      <td style="color: black; font-weight: bold;">
+                        <%= user.name %>
+                      </td>
+                      <td style="color: black; font-weight: bold;">
+                        <div>
+                          <%= user.threadsCreated %>
+                        </div>
+                      </td>
+                      <td style="color: black; font-weight: bold;">
+                        <div>
+                          <a href="#" class="h5" style="color: black; font-weight: bold;">Timothy L. Brodbeck</a>
+                        </div>
+                      </td>
+                    </tr>
+                  <% }); %>
                 </tbody>
+
               </table>
             </div>
           </div>
