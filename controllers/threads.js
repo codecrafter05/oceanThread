@@ -59,28 +59,28 @@ async function createComment(req, res) {
   try {
     const thread = await Thread.findById(req.query.id);
     const comment = await Comment.create(req.body);
-    const comments = await Comment.find();
-    const replies = await Reply.find();
     comment.thread = thread._id;
     await comment.save();
-    res.render('pages/thread-view', { thread, comments, replies });
+    res.redirect(`/threads/thread-view?id=${thread._id}`);
   } catch (err) {
     res.redirect('/error')
     console.log(err);
   }
 }
 
-// async function createReply(req, res) {
-//   try {
-//     const reply = await Reply.create(req.body);
-//     const comment = await Comment.findById(req.query.id);
-//     const thread = await Thread.findById(req.query.id);
-//     comment.replies.push(reply._id);
-//     res.render('pages/thread-view', { thread });
-//   } catch (err) {
-//     console.log(err);
-//   }
-// }
+async function createReply(req, res) {
+  try {
+    const thread = await Thread.findById(req.query.id);
+    const comment = await Comment.findById(req.query.cid);
+    const reply = await Reply.create(req.body);
+    reply.thread = comment._id;
+    await reply.save();
+    res.redirect(`/threads/thread-view?id=${thread._id}&cid=${comment._id}`);
+  } catch (err) {
+    res.redirect('/error')
+    console.log(err);
+  }
+}
 
 module.exports = {
   threadsPage,
@@ -88,5 +88,5 @@ module.exports = {
   threadsNew,
   createThread,
   createComment,
-  // createReply,
+  createReply,
 };
