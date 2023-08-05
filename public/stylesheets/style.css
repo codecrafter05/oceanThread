@@ -20,6 +20,15 @@ a {
   margin: 5%;
 }
 
+/* home page text */
+.text-center {
+  color: #FB8500;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: rgba(2, 22, 97, 0.24) 5px 6px 5px 5px;
+  padding: 10px;
+}
+
 .row {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -77,6 +86,13 @@ nav {
 
 .navigation-login {
   right: 150px;
+}
+
+.small-logo {
+    width: 300px;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*--- WAVE BUTTON - ALI HAJI ---*/
@@ -562,17 +578,6 @@ nav {
 }
 
 /* ----- SCROLL BAR - RASHID -----*/
-.red {
-  background-color: #f43f5e;
-}
-
-.blue {
-  background-color: #3b82f6;
-}
-
-.green {
-  background-color: #22c55e;
-}
 
 .scroll-snap-card {
   height: 100%;
@@ -606,7 +611,7 @@ nav {
 
 
 .container-fluid {
-  background-color: #023047;
+  background-color: #ffffff;
 }
 
 
@@ -621,7 +626,7 @@ nav {
 .card {
   width: 210px;
   height: 280px;
-  background: rgb(39, 39, 39);
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
   display: flex;
@@ -652,13 +657,17 @@ nav {
 .name {
   font-size: 0.9em;
   font-weight: 600;
-  color: white;
+  color: rgb(0, 0, 0);
   letter-spacing: 0.5px;
+}
+
+.Replies {
+  color: #000;
 }
 
 .profile {
   font-size: 0.84em;
-  color: rgb(194, 194, 194);
+  color: rgb(0, 0, 0);
   letter-spacing: 0.2px;
 }
 
@@ -668,7 +677,10 @@ nav {
 }
 
 .card-body {
-  padding: 1.875rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 10px 30px;
 }
 
 .scroll-snap-card {
@@ -687,17 +699,17 @@ nav {
 }
 
 .dataTablesCard thead {
-  background-color: #222;
+  background-color: #023047;
   color: #8ECAE6;
 }
 
 .dataTablesCard tbody tr {
-  background-color: #444;
+  background-color: #ffffff;
   color: #8ECAE6;
 }
 
 .dataTablesCard tbody tr:nth-child(even) {
-  background-color: #555;
+  background-color: #c2c2c2;
 }
 
 .dataTablesCard tbody tr:not(:last-child) {
@@ -705,7 +717,7 @@ nav {
 }
 
 #profile {
-  background-color: #0275d8;
+  background-color: #003149;
   /* background-image: url("/images/bg-1.png");
   background-size: cover; */
 }
