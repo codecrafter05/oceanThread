@@ -72,6 +72,31 @@
                     <span class="comment-text"><%= thisComment.content %></span>
                   </div>
                 </div>
+                <% replies.forEach(thisReply => { %>
+                  <% if(JSON.stringify(thisReply.comment) === JSON.stringify(thisComment._id)) { %>
+                    <div class="replies-container d-flex .justify-content-md-end">
+                      <img class="replies-avatar" src='<%= thisReply.avatar %>' />
+                      <div class="d-flex flex-column">
+                        <span class="reply-author"><%= thisReply.author %></span> 
+                        <span class="comment-text"><%= thisReply.content %></span>
+                      </div>
+                    </div>
+                  <% }; %>
+                <% }); %>
+                <% if(user) { %>
+                  <form action="/threads/thread-view?id=<%= thread._id %>&cid=<%= thisComment._id %>" method="post" class="comments-input">
+                    <div class="form-group row">
+                      <label for="content">Reply:</label>
+                      <textarea class="form-control comment-write" name="content" id="reply" cols="30" rows="2" placeholder="Add a Reply ..."></textarea>
+                    </div>
+          
+                    <input type="hidden" value="<%=user.avatar %>" id="avatar" name="avatar">
+                    <input type="hidden" value="<%=user.name %>" id="author" name="author">
+                    <input type="hidden" value="<%=user._id %>" id="authorId" name="authorId">
+          
+                    <input type="submit" value="Create Reply" class="button-1 comments-submit">
+                  </form>
+                <% }; %>
               </div>
             <% }; %>
           <% }); %>
