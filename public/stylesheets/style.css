@@ -539,6 +539,26 @@ nav {
     border-radius: .4rem;
     margin-right: 20px;
   }
+
+  .wave-btn {
+    width: 150px;
+  }
+
+  .navUserImg {
+    display: none;
+  }
+
+  .nav-name {
+    display: none;
+  }
+
+  .navbar-nav .nav-link {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+
 }
 
 /*------ THREADS SHOW PAGE - ALI HAJI -----*/
@@ -580,6 +600,7 @@ nav {
   .replies-container {
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 20px;
   }
 
   .comments-input {
