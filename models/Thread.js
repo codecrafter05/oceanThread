@@ -25,13 +25,6 @@ const threadSchema = new Schema(
       required: true,
     },
 
-    comments: [ // Array of Objects
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'Comment',
-      },
-    ],
-
     briefDescription: {
       type: String,
       required: true,
@@ -61,4 +54,3 @@ const threadSchema = new Schema(
 );
 
 module.exports = mongoose.model('Thread', threadSchema);
-
