@@ -47,15 +47,23 @@
             <span class="thread-comment-status">No Comments Yet</span>
           <% }; %>
 
-          <% thread.comments.forEach(element => { %>
+          <% allComments.forEach(element => { %>
             <div class="mb-3">
+
               <div class="comments-container d-flex">
                 <img class="thread-avatar" src='<%= thread.avatar %>' />
-                <p class="comment-text"><%= thread.author %> <br><%= element %></p>
+                <div class="d-flex flex-column">
+                  <span class="comment-author"><%= element.author %></span> 
+                  <span class="comment-text"><%= element.content %></span>
+                </div>
               </div>
+
               <div class="replies-container d-flex">
                 <img class="thread-avatar" src='<%= thread.avatar %>' />
-                <p class="comment-text"><%= thread.author %> <br>//INSERT REPLY HERE</p>
+                <div class="d-flex flex-column">
+                  <span class="reply-author"><%= element.author %></span> 
+                  <span class="comment-text"><%= element.content %></span>
+                </div>
               </div>
             </div>
       
