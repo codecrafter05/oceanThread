@@ -8,16 +8,19 @@ a {
   color: #00B7FF;
 }
 
-.container-fluid {
-  background-color: #023047;
-  margin: 0;
-  padding: 0;
-}
-
 .logo img {
   width: 80%;
   max-width: 200px;
   margin: 5%;
+}
+
+/* home page text */
+.text-center {
+  color: #FB8500;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: rgba(2, 22, 97, 0.24) 5px 6px 5px 5px;
+  padding: 10px;
 }
 
 .row {
@@ -77,6 +80,13 @@ nav {
 
 .navigation-login {
   right: 150px;
+}
+
+.small-logo {
+    width: 300px;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*--- WAVE BUTTON - ALI HAJI ---*/
@@ -562,17 +572,6 @@ nav {
 }
 
 /* ----- SCROLL BAR - RASHID -----*/
-.red {
-  background-color: #f43f5e;
-}
-
-.blue {
-  background-color: #3b82f6;
-}
-
-.green {
-  background-color: #22c55e;
-}
 
 .scroll-snap-card {
   height: 100%;
@@ -606,7 +605,7 @@ nav {
 
 
 .container-fluid {
-  background-color: #023047;
+  background-color: #ffffff;
 }
 
 
@@ -621,7 +620,7 @@ nav {
 .card {
   width: 210px;
   height: 280px;
-  background: rgb(39, 39, 39);
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
   display: flex;
@@ -652,31 +651,38 @@ nav {
 .name {
   font-size: 0.9em;
   font-weight: 600;
-  color: white;
+  color: rgb(0, 0, 0);
   letter-spacing: 0.5px;
+}
+
+.Replies {
+  color: #000;
 }
 
 .profile {
   font-size: 0.84em;
-  color: rgb(194, 194, 194);
+  color: rgb(0, 0, 0);
   letter-spacing: 0.2px;
 }
 
 .card:hover {
-  background-color: rgb(43, 43, 43);
+  background-color: #fa6400;
   transition-duration: .5s;
 }
 
 .card-body {
-  padding: 1.875rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 11px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .scroll-snap-card {
   max-width: 1200px;
   margin: auto;
 }
-
-
 
 .table-responsive {
   overflow-x: auto;
@@ -687,17 +693,19 @@ nav {
 }
 
 .dataTablesCard thead {
-  background-color: #222;
+  background-color: #0275d8;
   color: #8ECAE6;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .dataTablesCard tbody tr {
-  background-color: #444;
-  color: #8ECAE6;
+  background-color: #ffffff;
+  color: #8ECAE6; 
 }
 
 .dataTablesCard tbody tr:nth-child(even) {
-  background-color: #555;
+  background-color: #8ECAE6;
 }
 
 .dataTablesCard tbody tr:not(:last-child) {
