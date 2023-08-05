@@ -21,16 +21,9 @@ const threadSchema = new Schema(
 
     threadType: {
       type: String,
-      enum: ['Issues', 'Suggestions', 'Project Sharing', 'Feedback', 'General'],
+      enum: ['Issues', 'Suggestions', 'Projects', 'Feedback', 'General'],
       required: true,
     },
-
-    comments: [ // Array of Objects
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'Comment',
-      },
-    ],
 
     briefDescription: {
       type: String,
@@ -61,4 +54,3 @@ const threadSchema = new Schema(
 );
 
 module.exports = mongoose.model('Thread', threadSchema);
-

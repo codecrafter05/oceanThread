@@ -41,50 +41,44 @@
             <%= thread.content %>
           </span>
         </div>
-   
+
         <div class="thread-container d-flex flex-column mb-4">
-          <% if(thread.comments.length === 0) { %>
-            <span class="thread-comment-status">No Comments Yet</span>
+          
+          <% if(user) { %>
+            <form action="/threads/thread-view?id=<%= thread._id %>" method="post" class="comments-input">
+              <div class="form-group row">
+                <label for="content">Comment:</label>
+                <textarea class="form-control comment-write" name="content" id="comment" cols="30" rows="2" placeholder="Add a Comment ..."></textarea>
+              </div>
+    
+              <input type="hidden" value="<%=user.avatar %>" id="avatar" name="avatar">
+              <input type="hidden" value="<%=user.name %>" id="author" name="author">
+              <input type="hidden" value="<%=user._id %>" id="authorId" name="authorId">
+    
+              <input type="submit" value="Create Comment" class="button-1 comments-submit">
+            </form>
           <% }; %>
 
-          <% allComments.forEach(element => { %>
-            <div class="mb-3">
-
-              <div class="comments-container d-flex">
-                <img class="thread-avatar" src='<%= thread.avatar %>' />
-                <div class="d-flex flex-column">
-                  <span class="comment-author"><%= element.author %></span> 
-                  <span class="comment-text"><%= element.content %></span>
+          <% let x = false; %>
+          
+          <% comments.forEach(thisComment => { %>
+            <% if(JSON.stringify(thisComment.thread) === JSON.stringify(thread._id)) { %>
+              <% x = true; %>
+              <div class="mb-3">
+                <div class="comments-container d-flex">
+                  <img class="thread-avatar" src='<%= thisComment.avatar %>' />
+                  <div class="d-flex flex-column">
+                    <span class="comment-author"><%= thisComment.author %></span> 
+                    <span class="comment-text"><%= thisComment.content %></span>
+                  </div>
                 </div>
               </div>
-
-              <div class="replies-container d-flex .justify-content-md-end">
-                <img class="replies-avatar" src='<%= thread.avatar %>' />
-                <div class="d-flex flex-column">
-                  <span class="reply-author"><%= element.author %></span> 
-                  <span class="comment-text"><%= element.content %></span>
-                </div>
-              </div>
-            </div>
-      
+            <% }; %>
           <% }); %>
 
-         
-        
-        <% if(user){ %>
-          <form action="/threads/thread-view?id=<%= thread._id %>" method="post" class="comments-input">
-            <div class="form-group row">
-              <label for="content">Comment:</label>
-              <textarea class="form-control comment-write" name="content" id="comment" cols="30" rows="2" placeholder="Add a Comment ..."></textarea>
-            </div>
-  
-            <input type="hidden" value="<%=user.avatar %>" id="avatar" name="avatar">
-            <input type="hidden" value="<%=user.name %>" id="author" name="author">
-            <input type="hidden" value="<%=user._id %>" id="authorId" name="authorId">
-  
-            <input type="submit" value="Create Comment" class="button-1 comments-submit">
-          </form>
-        <% }; %>
+          <% if(x === false) { %>
+            <span class="thread-comment-status">No Comments Yet</span>
+          <% }; %>
         </div>
   
     </div>

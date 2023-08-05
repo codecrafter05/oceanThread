@@ -8,12 +8,14 @@ const commentSchema = new Schema(
       required: true,
     },
 
-    replies: [ // Array of Objects
-      {
+    thread: {
         type: Schema.Types.ObjectId,
-        ref: 'Reply',
-      },
-    ],
+        ref: 'Tread',
+    },
+
+    avatar: {
+      type: String,
+    },
 
     author: {
       type: String,
