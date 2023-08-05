@@ -91,11 +91,12 @@ nav {
   right: 150px;
 }
 
+/* Main logo */
 .small-logo {
-    width: 300px;
-    float: left;
-    margin-right: auto;
-    margin-left: auto;
+  width: 300px;
+  float: left;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*--- WAVE BUTTON - ALI HAJI ---*/
@@ -702,7 +703,8 @@ nav {
   justify-content: flex-start;
   transition-duration: .5s;
 }
-
+S
+/* leaderbord profile image */
 .profileImage {
   background: linear-gradient(to right, rgb(54, 54, 54), rgb(32, 32, 32));
   margin-top: 20px;
