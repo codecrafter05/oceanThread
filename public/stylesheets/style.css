@@ -507,10 +507,12 @@ nav {
   .thread-type {
     font-size: 14px;
   }
-  .replies-text{
+
+  .replies-text {
     color: #023047;
   }
-  .comment-text{
+
+  .comment-text {
     color: #023047;
   }
 }
@@ -735,4 +737,10 @@ nav {
   background-color: #0275d8;
   /* background-image: url("/images/bg-1.png");
   background-size: cover; */
+}
+
+/* ----- PROFILE PAGE CONTRIBUTIONS  - HAMAD -----*/
+
+.profileBox {
+  box-shadow: 0 9px 10px -2px rgba(0, 0, 0, 0.129);
 }

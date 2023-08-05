@@ -1,17 +1,72 @@
 <%- include('../partials/header') %>
-
-  <div class="thread-info d-flex flex-row justify-content-evenly" style="margin-top: 20px; width: 100%;">
+  <br>
+  <div class="hread-container d-flex flex-column">
+    <div class="profileBox p-3 mb-5 bg-white rounded">
+    <h1 class="thread-info d-flex flex-row justify-content-evenly">Contributions</h1>
     <% if(user) { %>
-      <p class="button-5"> Threads Created:
-        <%= user.threadsCreated %>
-      </p>
-      <p class="button-5"> Comments:
-        <%= user.threadsCreated %>
-      </p>
-      <p class="button-5"> Replies:
-        <%= user.threadsCreated %>
-      </p>
+      <div class="flex-column"">
+        <div class=" row1 w-100 d-flex flex-row justify-content-evenly" style="margin-top: 20px; width: 30%;">
+        <div class='col-md-3 mb-3'>
+          <button type="button" class="btn btn-white w-100 align-items-stretch d-flex shadow p-3 mb-5 bg-white rounded">
+            <div class="icon icon-left icon-primary d-flex align-items-center justify-content-center">
+              <img src="/images/threads_icon.png" alt="thread" style="width: 65%;">
+            </div>
+            <div class="w-100" style="text-align: right;">
+              <h4><%= user.threadsCreated %></h4>
+              <span>Threads</span>
+            </div>
+          </button>
+        </div>
+        <div class='col-md-3 mb-3'>
+          <button type="button" class="btn btn-white w-100 align-items-stretch d-flex shadow p-3 mb-5 bg-white rounded">
+            <div class="icon icon-left icon-primary d-flex align-items-center justify-content-center">
+              <img src="images/comment_icon.png" alt="comment" style="width: 60%;">
+            </div>
+            <div class="w-100" style="text-align: right;">
+              <h4>insert</h4>
+              <span>Comments</span>
+            </div>
+          </button>
+        </div>
+        <div class='col-md-3 mb-3'>
+          <button type="button" class="btn btn-white w-100 align-items-stretch d-flex shadow p-3 mb-5 bg-white rounded">
+            <div class="icon icon-left icon-primary d-flex align-items-center justify-content-center">
+              <img src="images/reply_icon.png" alt="reply" style="width: 85%;">
+            </div>
+            <div class="w-100" style="text-align: right;">
+              <h4>insert</h4>
+              <span>Replies</span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="row2 w-100 d-flex flex-row justify-content-evenly" style="margin-top: 20px; width: 80%;">
+        <div class='col-md-3 mb-3'>
+          <button type="button" class="btn btn-white w-100 align-items-stretch d-flex shadow p-3 mb-5 bg-white rounded">
+            <div class="icon icon-left icon-primary d-flex align-items-center justify-content-center">
+              <img src="images/first_thread_icon.png" alt="first thread" style="width: 100%;">
+            </div>
+            <div class="w-100" style="text-align: right;">
+              <h4>insert</h4>
+              <span>First Thread</span>
+            </div>
+          </button>
+        </div>
+        <div class='col-md-3 mb-3'>
+          <button type="button" class="btn btn-white w-100 align-items-stretch d-flex shadow p-3 mb-5 bg-white rounded">
+            <div class="icon icon-left icon-primary d-flex align-items-center justify-content-center">
+              <img src="images/latest_thread.png" alt="latest thread" style="width: 80%;">
+            </div>
+              <div class="w-100" style="text-align: right;">
+                <h4>insert</h4>
+                <span>Latest Thread</span>
+              </div>
+          </button>
+        </div>
+      </div>
+      </div>
       <% }; %>
+  </div>
   </div>
 
   <div id="threads">
@@ -33,19 +88,17 @@
                     <%= thread.author %>
                   </span>
                   <span class="thread-createdAt">
-                    <%
-                    let datess = JSON.stringify(thread.createdAt);           
-                    let filteredData = datess.split("."); 
-                    let filteredData2 = filteredData[0].split("T")
-                     %>
-                    <%= filteredData2[0].substring(1) %>
-                    <%= filteredData2[1] %>
+                    <% let datess=JSON.stringify(thread.createdAt); let filteredData=datess.split("."); let
+                      filteredData2=filteredData[0].split("T") %>
+                      <%= filteredData2[0].substring(1) %>
+                        <%= filteredData2[1] %>
                   </span>
                 </div>
               </div>
 
 
-              <div class="thread-container-type d-flex flex-row col-xl-4 flex-wrap justify-content-xl-end"  style="margin-top: 10px;">
+              <div class="thread-container-type d-flex flex-row col-xl-4 flex-wrap justify-content-xl-end"
+                style="margin-top: 10px;">
                 <span class="thread-cohort button-34">
                   <%= thread.cohort %>
                 </span>
