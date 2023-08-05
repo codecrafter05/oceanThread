@@ -17,8 +17,9 @@ async function threadsPage(req, res) {
 async function threadsShow(req, res) {
   try {
     const thread = await Thread.findById(req.query.id);
-    const allComments = await Comment.find();
-    res.render('pages/thread-view', { thread, allComments });
+    const comments = await Comment.find();
+    const replies = await Reply.find();
+    res.render('pages/thread-view', { thread, comments, replies });
   } catch (err) {
     res.redirect('/error')
     console.log(err);
@@ -39,7 +40,7 @@ async function createThread(req, res) {
   try {
     const thread = await Thread.create(req.body);
     let userId = req.params.id;
-    const user = await User.findById(userId)
+    const user = await User.findById(userId);
     // console.log(` `)
     // console.log(`userID ${userId}`)
     // console.log(`user ${JSON.stringify(user)}`)
@@ -56,13 +57,15 @@ async function createThread(req, res) {
 
 async function createComment(req, res) {
   try {
-    const comment = await Comment.create(req.body);
-    const allComments = await Comment.find();
     const thread = await Thread.findById(req.query.id);
-    thread.comments.push(comment._id);
-    await thread.save();
-    res.render('pages/thread-view', { thread, allComments });
+    const comment = await Comment.create(req.body);
+    const comments = await Comment.find();
+    const replies = await Reply.find();
+    comment.thread = thread._id;
+    await comment.save();
+    res.render('pages/thread-view', { thread, comments, replies });
   } catch (err) {
+    res.redirect('/error')
     console.log(err);
   }
 }
