@@ -701,7 +701,7 @@ nav {
 
 .dataTablesCard tbody tr {
   background-color: #ffffff;
-  color: #8ECAE6;
+  color: #8ECAE6; 
 }
 
 .dataTablesCard tbody tr:nth-child(even) {
