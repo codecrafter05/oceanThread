@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-  <div class="thread-info d-flex flex-row justify-content-evenly" style="margin-top: 20px;">
+  <div class="thread-info d-flex flex-row justify-content-evenly" style="margin-top: 20px; width: 100%;">
     <% if(user) { %>
       <p class="button-5"> Threads Created:
         <%= user.threadsCreated %>
@@ -45,7 +45,7 @@
               </div>
 
 
-              <div class="thread-container-type d-flex flex-row col-xl-4 flex-wrap justify-content-xl-end">
+              <div class="thread-container-type d-flex flex-row col-xl-4 flex-wrap justify-content-xl-end"  style="margin-top: 10px;">
                 <span class="thread-cohort button-34">
                   <%= thread.cohort %>
                 </span>
