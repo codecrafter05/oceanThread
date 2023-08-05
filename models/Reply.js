@@ -8,6 +8,15 @@ const replySchema = new Schema(
       required: true,
     },
 
+    comment: {
+        type: Schema.Types.ObjectId,
+        ref: 'Comment',
+    },
+
+    avatar: {
+      type: String,
+    },
+
     author: {
       type: String,
     },
