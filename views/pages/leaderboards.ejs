@@ -1,14 +1,13 @@
 <%- include('../partials/header') %>
 
-  <div class="container-fluid">
+  <div class="container-fluid px-sm-3 px-lg-5" style="justify-content: space-between;">
     <div class="row">
-      <div class="col-sm-12 col-lg-8 order-xs-2 order-sm-2 order-md-2 order-lg-1">
-        <!-- div leaderbord container -->
-        <div class="scroll-snap-card d-flex justify-content-center align-items-center">
-          <div class="card-body">
+              <!-- div leaderbord container -->
+      <div class="col-sm-12 col-lg-8 order-2 order-md-1">
+        <div class="scroll-snap-card d-flex justify-content-center align-items-center px-sm-3 px-lg-5" style="padding-top: 10px;">
+          <div class="card-body" style="overflow-y: auto; max-height: 300px;">
             <div class="table-responsive ticket-table">
-              <table id="example" class="display dataTablesCard dataTable no-footer" style="min-width: 845px; color: black;"
-                role="grid" aria-describedby="example_info">
+              <table id="example" class="display dataTablesCard dataTable no-footer" style="color: black;" role="grid" aria-describedby="example_info">
                 <thead>
                   <tr role="row">
                     <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
@@ -31,20 +30,20 @@
                   <% users.forEach(user => { %>
                     <% index++ %>
                     <tr class="odd" role="row">
-                      <td class="sorting_1" style="color: black; font-weight: bold;">
+                      <td class="sorting_1" style="color: black; font-weight: bold; padding-top: 10px; padding-bottom: 10px;">
                         <%= index %>
                       </td>
-                      <td style="color: black; font-weight: bold;">
+                      <td style="color: black; font-weight: bold; padding-top: 10px; padding-bottom: 10px;">
                         <%= user.name %>
                       </td>
-                      <td style="color: black; font-weight: bold;">
+                      <td style="color: black; font-weight: bold; padding-top: 10px; padding-bottom: 10px;">
                         <div>
                           <%= user.threadsCreated %>
                         </div>
                       </td>
-                      <td style="color: black; font-weight: bold;">
+                      <td style="color: black; font-weight: bold; padding-top: 10px; padding-bottom: 10px;">
                         <div>
-                          <a href="#" class="h5" style="color: black; font-weight: bold;">Timothy L. Brodbeck</a>
+                          <a href="#" class="h5" style="color: black; font-weight: bold; padding-top: 10px; padding-bottom: 10px;">Timothy L. Brodbeck</a>
                         </div>
                       </td>
                     </tr>
@@ -59,7 +58,7 @@
 
       <!-- div profile  -->
       <% if(user){ %>
-        <div class="col-lg-4 d-flex justify-content-center align-items-center order-1 order-md-1" id="profile">
+        <div class="col-lg-4 d-flex justify-content-center align-items-center order-1 order-md-2" id="profile" style="margin-bottom: px;">
           <div class="my-4 d-flex justify-content-center align-items-center">
             <div class="card">
               <div class="profileImage">
