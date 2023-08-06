@@ -44,9 +44,14 @@ It is inspired by other knowledge markets such as stackoverflow.com, quora.com, 
 
 ## 🌟 Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- Minimal, clean, responsive layout based on Bootstrap boilerplate.
+- Vanilla Node.js code from scratch with no additional frameworks.
+- OAuth 2.0 Authentication: Login/Logout seamlessly through Google.
+- Simple navigation bar to let users surf between different pages.
+- Threads listing page with user avatars and filtering feature.
+- Thread standalone viewing page with commenting functionality.
+- User dashboard that shows threads with update/delete ability.
+- Leaderboard page to rank users by the number of threads created.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,12 +135,16 @@ Touch an '.env' file and include the following keys: DATABASE_URL, GOOGLE_CLIENT
 ## 👥 Team Members <a name="members"></a>
 
 👤 **Ahmed Almadhoob** | [GitHub](https://git.generalassemb.ly/almadhoob/) - [LinkedIn](https://www.linkedin.com/in/almadhoob/)
+  - The navigator, a DevOps specialist who deals with clean codebase initialisation, pull requests handling, testing and deployment. He also interacts with the engineering department as a backend developer.
 
 👤 **Ali Haji** (El Capitán) | [GitHub](https://git.generalassemb.ly/ali-haji4/) - [LinkedIn](https://linkedin.com/in/ali--haji/)
+  - The shipmaster, a full-stack developer who leads everything on the watercraft starting from task assignment to implementation. He also makes use of his creative skills to wireframe maps before navigation.
 
 👤 **Hamad Alhibshi** | [GitHub](https://git.generalassemb.ly/hamadalhibshi/) - [LinkedIn](https://linkedin.com/in/halhibshi/)
+  - The engineering officer, a pure back-end developer who works 24/7 to add many lines of code for routes and controllers. He also deals with database schemas to make sure it runs smoothly with the engine.
 
 👤 **Rashid Althawadi** | [GitHub](https://git.generalassemb.ly/althawadi/) - [LinkedIn](https://linkedin.com/in/althawadi7/)
+  - The communications officer, a pure front-end developer who deals with designing webpages and adding styling sheets. As a multimedia specialist, he also creates wonderful logos, images and video clips.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,9 +152,9 @@ Touch an '.env' file and include the following keys: DATABASE_URL, GOOGLE_CLIENT
 
 ## 📅 Future Features <a name="future-features"></a>
 
-- [x] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- Push notification to email using OneSignal API.
+- Full-text search for all the threads and comments.
+- Adding experience points (XP) to the leaderboard.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,7 +184,7 @@ git push -u origin yourBranch
 
 ## 🫰 Show Support <a name="support"></a>
 
-If you like this project then support us by donations or buy a cup of coffee for each team member.
+If you like this project then support us by donations or buy a cup of coffee for each team member at least.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
