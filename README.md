@@ -44,9 +44,14 @@ It is inspired by other knowledge markets such as stackoverflow.com, quora.com, 
 
 ## 🌟 Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- Minimal, clean, responsive layout based on Bootstrap boilerplate.
+- Vanilla Node.js code from scratch with no additional frameworks.
+- OAuth 2.0 Authentication: Login/Logout seamlessly through Google.
+- Simple navigation bar to let users surf between different pages.
+- Threads listing page with user avatars and filtering feature.
+- Thread standalone viewing page with commenting functionality.
+- User dashboard that shows threads with update/delete ability.
+- Leaderboard page to rank users by the number of threads created.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,9 +152,9 @@ Touch an '.env' file and include the following keys: DATABASE_URL, GOOGLE_CLIENT
 
 ## 📅 Future Features <a name="future-features"></a>
 
-- [x] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- Push notification to email using OneSignal API.
+- Full-text search for all the threads and comments.
+- Adding experience points (XP) to the leaderboard.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,7 +184,7 @@ git push -u origin yourBranch
 
 ## 🫰 Show Support <a name="support"></a>
 
-If you like this project then support us by donations or buy a cup of coffee for each team member.
+If you like this project then support us by donations or buy a cup of coffee for each team member at least.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
