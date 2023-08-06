@@ -683,13 +683,12 @@ nav {
 }
 
 
-.textContainer {
+/* .textContainer {
   color: white;
   font-weight: 700;
   width: fit-content;
   gap: 0;
-
-}
+} */
 
 .card {
   width: 210px;

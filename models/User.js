@@ -25,6 +25,11 @@ const userSchema = new Schema(
       type: Number,
       default: 0,
     },
+    
+    commentsCreated: {
+      type: Number,
+      default: 0,
+    },
 
   }, {
     timestamps: true,
