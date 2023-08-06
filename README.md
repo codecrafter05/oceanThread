@@ -130,12 +130,16 @@ Touch an '.env' file and include the following keys: DATABASE_URL, GOOGLE_CLIENT
 ## 👥 Team Members <a name="members"></a>
 
 👤 **Ahmed Almadhoob** | [GitHub](https://git.generalassemb.ly/almadhoob/) - [LinkedIn](https://www.linkedin.com/in/almadhoob/)
+  - The navigator, a DevOps specialist who deals with clean codebase initialisation, pull requests handling, testing and deployment. He also interacts with the engineering department as a backend developer.
 
 👤 **Ali Haji** (El Capitán) | [GitHub](https://git.generalassemb.ly/ali-haji4/) - [LinkedIn](https://linkedin.com/in/ali--haji/)
+  - The shipmaster, a full-stack developer who leads everything on the watercraft starting from task assignment to implementation. He also makes use of his creative skills to wireframe maps before navigation.
 
 👤 **Hamad Alhibshi** | [GitHub](https://git.generalassemb.ly/hamadalhibshi/) - [LinkedIn](https://linkedin.com/in/halhibshi/)
+  - The engineering officer, a pure back-end developer who works 24/7 to add many lines of code for routes and controllers. He also deals with database schemas to make sure it runs smoothly with the engine.
 
 👤 **Rashid Althawadi** | [GitHub](https://git.generalassemb.ly/althawadi/) - [LinkedIn](https://linkedin.com/in/althawadi7/)
+  - The communications officer, a pure front-end developer who deals with designing webpages and adding styling sheets. As a multimedia specialist, he also creates wonderful logos, images and video clips.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
