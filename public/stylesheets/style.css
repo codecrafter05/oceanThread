@@ -560,6 +560,10 @@ nav {
     padding-bottom: 30px;
   }
 
+  .comments-submit {
+    margin-bottom: 20px;
+  }
+
 }
 
 /*------ THREADS SHOW PAGE - ALI HAJI -----*/
@@ -608,7 +612,6 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: yellow;
     margin-top: 20px;
     margin-bottom: 20px
   }
@@ -642,6 +645,10 @@ nav {
     height: 40px;
     border-radius: .4rem;
     margin-right: 20px;
+  }
+
+  .comments-submit {
+    margin-left: 20px;
   }
 }
 
