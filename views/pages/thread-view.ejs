@@ -72,6 +72,17 @@
                     <span class="comment-text"><%= thisComment.content %></span>
                   </div>
                 </div>
+                <% replies.forEach(thisReply => { %>
+                  <% if(JSON.stringify(thisReply.comment) === JSON.stringify(thisComment._id)) { %>
+                    <div class="replies-container d-flex .justify-content-md-end">
+                      <img class="replies-avatar" src='<%= thisReply.avatar %>' />
+                      <div class="d-flex flex-column">
+                        <span class="reply-author"><%= thisReply.author %></span> 
+                        <span class="comment-text"><%= thisReply.content %></span>
+                      </div>
+                    </div>
+                  <% }; %>
+                <% }); %>
               </div>
             <% }; %>
           <% }); %>
