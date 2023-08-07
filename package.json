@@ -9,7 +9,7 @@
     "social networking",
     "microblogging"
   ],
-  "homepage": "https://github.com/owner/project#readme",
+  "homepage": "https://oceanthreads.cyclic.app",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   "main": "server.js",
   "private": false,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www"
   },
   "engines": {
     "node": ">=20"
