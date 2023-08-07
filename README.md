@@ -59,7 +59,7 @@ It is inspired by other knowledge markets such as stackoverflow.com, quora.com, 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- The website is accessible from [this link](https://oceanthreads.cyclic.app/).
+- The website is accessible from [this link](https://drab-cyan-bison-hose.cyclic.app/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
