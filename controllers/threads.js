@@ -1,15 +1,15 @@
-const Thread = require('../models/Thread');
-const User = require('../models/User');
-const Comment = require('../models/Comment');
-const Reply = require('../models/Reply');
+const Thread = require("../models/Thread");
+const User = require("../models/User");
+const Comment = require("../models/Comment");
+const Reply = require("../models/Reply");
 
 async function threadsPage(req, res) {
   try {
     const threads = await Thread.find();
     const users = await User.find();
-    res.render('pages/threads', { threads, users });
+    res.render("pages/threads", { threads, users });
   } catch (err) {
-    res.redirect('/error')
+    res.redirect("/error");
     console.log(err);
   }
 }
@@ -19,9 +19,9 @@ async function threadsShow(req, res) {
     const thread = await Thread.findById(req.query.id);
     const comments = await Comment.find();
     const replies = await Reply.find();
-    res.render('pages/thread-view', { thread, comments, replies });
+    res.render("pages/thread-view", { thread, comments, replies });
   } catch (err) {
-    res.redirect('/error')
+    res.redirect("/error");
     console.log(err);
   }
 }
@@ -29,9 +29,9 @@ async function threadsShow(req, res) {
 async function threadsNew(req, res) {
   try {
     const users = await User.find();
-    res.render('pages/threads-new', { users });
+    res.render("pages/threads-new", { users });
   } catch (err) {
-    res.redirect('/error')
+    res.redirect("/error");
     console.log(err);
   }
 }
@@ -47,13 +47,12 @@ async function createThread(req, res) {
     // console.log(`user.threadsCreated ${JSON.stringify(user.threadsCreated)}`)
     user.threadsCreated += 1;
     await user.save();
-    res.redirect('/threads');
-  }
-  catch (err) {
-    res.redirect('/error')
+    res.redirect("/threads");
+  } catch (err) {
+    res.redirect("/error");
     console.log(err);
   }
-};
+}
 
 async function createComment(req, res) {
   try {
@@ -63,7 +62,7 @@ async function createComment(req, res) {
     await comment.save();
     res.redirect(`/threads/thread-view?id=${thread._id}`);
   } catch (err) {
-    res.redirect('/error')
+    res.redirect("/error");
     console.log(err);
   }
 }
@@ -77,7 +76,7 @@ async function createReply(req, res) {
     await reply.save();
     res.redirect(`/threads/thread-view?id=${thread._id}&cid=${comment._id}`);
   } catch (err) {
-    res.redirect('/error')
+    res.redirect("/error");
     console.log(err);
   }
 }

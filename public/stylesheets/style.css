@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 
 .logo img {
@@ -16,7 +16,7 @@ a {
 
 /* home page text */
 .text-center {
-  color: #FB8500;
+  color: #fb8500;
   font-size: 18px;
   font-weight: bold;
   box-shadow: rgba(2, 22, 97, 0.24) 5px 6px 5px 5px;
@@ -38,7 +38,7 @@ p {
   height: 254px;
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   border-radius: 20px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .card2 {
@@ -46,7 +46,7 @@ p {
   height: 254px;
   background-color: #1a1a1a;
   border-radius: 10px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .card2:hover {
@@ -55,7 +55,7 @@ p {
 }
 
 .card:hover {
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
 }
 
 /* Media queries for responsiveness */
@@ -70,7 +70,7 @@ p {
 /*----- NAVIGATION BAR - ALI HAJI -----*/
 
 nav {
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, .4);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.4);
 }
 
 .navUserImg {
@@ -105,20 +105,21 @@ nav {
   align-items: center;
   background-clip: padding-box;
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
   min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
   text-decoration: none;
   transition: all 250ms;
@@ -128,7 +129,6 @@ nav {
   vertical-align: baseline;
   width: auto;
   overflow: hidden;
-
 }
 
 .wave-btn span {
@@ -147,13 +147,13 @@ nav {
   width: 270px;
   height: 200px;
   background: #0275d8;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-  transition: .5s;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
 }
 
 .wave-btn .liquid::after,
 .wave-btn .liquid::before {
-  content: '';
+  content: "";
   width: 200%;
   height: 200%;
   position: absolute;
@@ -164,16 +164,14 @@ nav {
 }
 
 .wave-btn .liquid::before {
-
   border-radius: 45%;
   background: rgba(20, 20, 20, 1);
   animation: animate 5s linear infinite;
 }
 
 .wave-btn .liquid::after {
-
   border-radius: 40%;
-  background: rgba(20, 20, 20, .5);
+  background: rgba(20, 20, 20, 0.5);
   animation: animate 10s linear infinite;
 }
 
@@ -198,20 +196,21 @@ nav {
   background-clip: padding-box;
   background-color: #fa6400;
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
   min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
   text-decoration: none;
   transition: all 250ms;
@@ -234,7 +233,7 @@ nav {
 
 .button-5:active {
   background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
 
@@ -245,20 +244,21 @@ nav {
   background-clip: padding-box;
   background-color: #d92232;
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
   min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
   text-decoration: none;
   transition: all 250ms;
@@ -281,7 +281,7 @@ nav {
 
 .button-delete:active {
   background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
 
@@ -292,20 +292,21 @@ nav {
   background-clip: padding-box;
   background-color: #0275d8;
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
   min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
   text-decoration: none;
   transition: all 250ms;
@@ -318,7 +319,7 @@ nav {
 
 .button-edit:hover,
 .button-edit:focus {
-  background-color: #219EBC;
+  background-color: #219ebc;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
@@ -328,7 +329,7 @@ nav {
 
 .button-edit:active {
   background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
 
@@ -339,8 +340,11 @@ nav {
   border-radius: 999px;
   box-shadow: #0275d8 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
-  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+  color: #ffffff;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -360,8 +364,11 @@ nav {
   border-radius: 999px;
   box-shadow: #fa6400 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
-  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+  color: #ffffff;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -375,9 +382,6 @@ nav {
   word-break: break-word;
   border: 0;
 }
-
-
-
 
 /*----- THREADS PAGE - ALI HAJI -----*/
 
@@ -403,7 +407,6 @@ nav {
   margin-right: 15px;
   min-width: auto;
   margin-bottom: 10px;
-
 }
 
 .thread-type {
@@ -440,7 +443,7 @@ nav {
 
 .thread-avatar {
   height: 50px;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   margin-right: 20px;
 }
 
@@ -480,7 +483,6 @@ nav {
   position: absolute;
   left: 0;
   z-index: 1;
-
 }
 
 .thread-new-image {
@@ -508,7 +510,7 @@ nav {
   .thread-type {
     font-size: 14px;
   }
-  
+
   .comment-text {
     color: #023047;
     font-size: 16px;
@@ -526,7 +528,7 @@ nav {
   }
 
   .reply-author {
-    color: #FB8500;
+    color: #fb8500;
     font-weight: bold;
     margin-bottom: 1px;
   }
@@ -537,7 +539,7 @@ nav {
 
   .replies-avatar {
     height: 40px;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     margin-right: 20px;
   }
 
@@ -563,7 +565,6 @@ nav {
   .comments-submit {
     margin-bottom: 20px;
   }
-
 }
 
 /*------ THREADS SHOW PAGE - ALI HAJI -----*/
@@ -572,7 +573,7 @@ nav {
   font-size: 30px;
   color: #023047;
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 .thread-show-content {
@@ -613,7 +614,7 @@ nav {
     justify-content: center;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
   }
 
   .comment-text {
@@ -633,7 +634,7 @@ nav {
   }
 
   .reply-author {
-    color: #FB8500;
+    color: #fb8500;
     font-weight: bold;
   }
 
@@ -643,7 +644,7 @@ nav {
 
   .replies-avatar {
     height: 40px;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     margin-right: 20px;
   }
 
@@ -684,18 +685,15 @@ nav {
   /* min-height: 100%; */
 }
 
-
 .container-fluid {
   background-color: #ffffff;
 }
-
 
 .textContainer {
   color: white;
   font-weight: 700;
   width: fit-content;
   gap: 0;
-
 }
 
 .card {
@@ -708,7 +706,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 /* leaderbord profile image */
@@ -747,7 +745,7 @@ nav {
 
 .card:hover {
   background-color: #fa6400;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .card-body {
@@ -774,22 +772,22 @@ nav {
 
 .dataTablesCard thead {
   background-color: #0275d8;
-  color: #8ECAE6;
+  color: #8ecae6;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .dataTablesCard tbody tr {
   background-color: #ffffff;
-  color: #8ECAE6; 
+  color: #8ecae6;
 }
 
 .dataTablesCard tbody tr:nth-child(even) {
-  background-color: #8ECAE6;
+  background-color: #8ecae6;
 }
 
 .dataTablesCard tbody tr:not(:last-child) {
-  border-bottom: 1px solid #8ECAE6;
+  border-bottom: 1px solid #8ecae6;
 }
 
 #profile {

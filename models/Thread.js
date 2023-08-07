@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const threadSchema = new Schema(
@@ -15,13 +15,13 @@ const threadSchema = new Schema(
 
     cohort: {
       type: String,
-      enum: ['SEI', 'DAI', 'UI/UX', 'General'],
+      enum: ["SEI", "DAI", "UI/UX", "General"],
       required: true,
     },
 
     threadType: {
       type: String,
-      enum: ['Issues', 'Suggestions', 'Projects', 'Feedback', 'General'],
+      enum: ["Issues", "Suggestions", "Projects", "Feedback", "General"],
       required: true,
     },
 
@@ -40,12 +40,12 @@ const threadSchema = new Schema(
 
     authorId: {
       type: Schema.Types.ObjectId,
-      ref: 'User',
+      ref: "User",
     },
 
     user: {
       type: Schema.Types.ObjectId,
-      ref: 'User',
+      ref: "User",
     },
   },
   {
@@ -53,4 +53,4 @@ const threadSchema = new Schema(
   }
 );
 
-module.exports = mongoose.model('Thread', threadSchema);
+module.exports = mongoose.model("Thread", threadSchema);

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const replySchema = new Schema(
@@ -9,8 +9,8 @@ const replySchema = new Schema(
     },
 
     comment: {
-        type: Schema.Types.ObjectId,
-        ref: 'Comment',
+      type: Schema.Types.ObjectId,
+      ref: "Comment",
     },
 
     avatar: {
@@ -23,12 +23,12 @@ const replySchema = new Schema(
 
     authorId: {
       type: Schema.Types.ObjectId,
-      ref: 'User',
+      ref: "User",
     },
 
     user: {
       type: Schema.Types.ObjectId,
-      ref: 'User',
+      ref: "User",
     },
   },
   {
@@ -36,4 +36,4 @@ const replySchema = new Schema(
   }
 );
 
-module.exports = mongoose.model('Reply', replySchema);
+module.exports = mongoose.model("Reply", replySchema);
