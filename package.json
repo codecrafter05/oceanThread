@@ -9,7 +9,7 @@
     "social networking",
     "microblogging"
   ],
-  "homepage": "https://oceanthreads.cyclic.app",
+  "homepage": "https://drab-cyan-bison-hose.cyclic.app",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "start": "node ./bin/www"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=18"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
