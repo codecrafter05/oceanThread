@@ -59,7 +59,7 @@ It is inspired by other knowledge markets such as stackoverflow.com, quora.com, 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- The website is accessible from [this link](https://pages.git.generalassemb.ly/pirates-team/ocean-threads/).
+- The website is accessible from [this link](https://drab-cyan-bison-hose.cyclic.app/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +102,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need the following tools (or newer versions):
+It is recommended to have the following software (or newer versions) to run the project properly:
 - git v2.41.0
 - npm v9.8.1
 - Node.js v20.5.0
@@ -135,16 +135,16 @@ Touch an '.env' file and include the following keys: DATABASE_URL, GOOGLE_CLIENT
 ## 👥 Team Members <a name="members"></a>
 
 👤 **Ahmed Almadhoob** | [GitHub](https://git.generalassemb.ly/almadhoob/) - [LinkedIn](https://www.linkedin.com/in/almadhoob/)
-  - The navigator, a ***DevOps engineer*** who deals with clean codebase initialisation, pull requests handling, testing and deployment. He also interacts with the back-end developers through buddy coding.
+  - The navigator, a ***DevOps Engineer*** who deals with clean codebase initialisation, pull requests handling, testing and deployment. He also interacts with the terminal as a back-end developer on demand.
 
 👤 **Ali Haji** (El Capitán) | [GitHub](https://git.generalassemb.ly/ali-haji4/) - [LinkedIn](https://linkedin.com/in/ali--haji/)
-  - The shipmaster, a ***Full-stack engineer*** who leads everything on the watercraft starting from task assignment to implementation. He also makes use of his creative skills to wireframe maps before navigation.
+  - The shipmaster, a ***Full-stack Engineer*** who manages everything on the watercraft starting from task assignment to implementation. He also utilises creative skills to wireframe maps before navigation.
 
 👤 **Hamad Alhibshi** | [GitHub](https://git.generalassemb.ly/hamadalhibshi/) - [LinkedIn](https://linkedin.com/in/halhibshi/)
-  - The engineering officer, a pure ***Back-end engineer*** who works 24/7 to add many lines of code for routes and controllers. He also deals with database schemas to make sure it runs smoothly with the engine.
+  - The engineering officer, a pure ***Back-end Engineer*** who works 24/7 to add many lines of code for routes and controllers. He also deals with database schemas to make sure it runs smoothly with the engine.
 
 👤 **Rashid Althawadi** | [GitHub](https://git.generalassemb.ly/althawadi/) - [LinkedIn](https://linkedin.com/in/althawadi7/)
-  - The communications officer, a pure ***Front-end engineer*** who deals with designing webpages and adding styling sheets. As a multimedia specialist, he creates wonderful logos, images and video clips.
+  - The communications officer, a pure ***Front-end Engineer*** who deals with designing webpages and adding styling sheets. As a multimedia specialist, he creates wonderful logos, images and video clips.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,9 +152,9 @@ Touch an '.env' file and include the following keys: DATABASE_URL, GOOGLE_CLIENT
 
 ## 📅 Future Features <a name="future-features"></a>
 
-- Push notification to email using OneSignal API.
 - Full-text search for all the threads and comments.
 - Adding experience points (XP) to the leaderboard.
+- Push notification to email using OneSignal API.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,7 +162,7 @@ Touch an '.env' file and include the following keys: DATABASE_URL, GOOGLE_CLIENT
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](http://amstalks.github.io/ocean-threads).
+Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://git.generalassemb.ly/pirates-team/ocean-threads/issues/).
 
 To create a new branch each time:
 ```sh
