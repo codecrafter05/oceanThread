@@ -9,13 +9,14 @@
     "social networking",
     "microblogging"
   ],
+  "homepage": "https://github.com/owner/project#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://git.generalassemb.ly/pirates-team/ocean-threads.git"
   },
   "main": "server.js",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "nodemon ./bin/www"
   },
